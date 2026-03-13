@@ -1,0 +1,21 @@
+{
+  "name": "legal-france",
+  "description": "French law assistant with domain-specific expertise across civil, criminal, labor, business, administrative, digital, and European law. Supports legal consultation, case law research, contract analysis, and document parsing.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Amine Harrak"
+  },
+  "repository": "https://github.com/amineharrak/legal-france",
+  "license": "MIT",
+  "keywords": [
+    "french-law",
+    "droit",
+    "legal",
+    "jurisprudence",
+    "legifrance",
+    "consultation",
+    "contract-analysis",
+    "gdpr",
+    "rgpd"
+  ]
+}
