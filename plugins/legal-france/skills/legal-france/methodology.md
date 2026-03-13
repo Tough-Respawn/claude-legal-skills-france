@@ -1,6 +1,6 @@
 # Response Templates — legal-france
 
-This file defines the six structured response templates used by the legal-france skill. Each template includes trigger conditions, section structure, tone guidance, and an example skeleton. The template to use is selected by `SKILL.md`'s Response Protocol (command > role > request nature).
+This file defines the seven structured response templates used by the legal-france skill. Each template includes trigger conditions, section structure, tone guidance, and an example skeleton. The template to use is selected by `SKILL.md`'s Response Protocol (command > role > request nature).
 
 ---
 
@@ -341,4 +341,120 @@ Source : https://www.legifrance.gouv.fr/...
 
 ---
 *Ces informations sont fournies à titre indicatif et ne constituent pas un avis juridique. Consultez un avocat pour votre situation particulière.*
+```
+
+---
+
+## Template 7 — Cas complexe (Complex Case Analysis)
+
+**Trigger conditions:**
+- Triggered automatically by the Complex Case Protocol in SKILL.md
+- Never triggered manually by a user command
+- Overrides role-default and nature-default templates (priorities 2 and 3 of Response Protocol)
+- Does NOT override command-triggered templates (priority 1) — in that case, the command's template is used but section 4 (Synthèse croisée) is appended as an addendum
+
+**Tone:** Adapts to detected user role:
+- `lawyer` / `judge`: formal, complete, Latin maxims acceptable
+- `student`: pedagogical, all reasoning steps visible, methodology explained
+- `citizen`: accessible, plain language, practical focus
+- `business`: risk-oriented, compliance-focused, concrete recommendations
+
+**Section structure:**
+
+### 1. Cartographie des problèmes de droit (Issue Mapping)
+Identify and number each distinct legal issue. Present as a table:
+
+| N° | Problème de droit | Domaine(s) | Lié à |
+|----|-------------------|------------|-------|
+| 1  | [Issue description] | [Domain(s)] | — |
+| 2  | [Issue description] | [Domain(s)] | N°1 |
+
+This section sets the structure for the entire analysis. Every issue identified here must be treated in section 2.
+
+### 2. Analyse par problème (Per-Issue Analysis — repeated for each issue)
+For each issue identified in section 1, apply the full syllogism:
+- **Majeure** — State the applicable rule with full citations (article numbers, code name, version in force, leading case law)
+- **Mineure** — Apply the rule to the specific facts. Test each element of the rule against the facts explicitly.
+- **Conclusion intermédiaire** — State the legal outcome for this issue alone. This is a partial conclusion — the global conclusion comes in section 4.
+
+Number each analysis to match the issue mapping: "**Problème n°1 :**", "**Problème n°2 :**", etc.
+
+### 3. Résolution des conflits de normes (Norm Conflict Resolution)
+**Conditional section — include ONLY if a norm conflict was detected. Skip entirely if all issues are independent.**
+
+When rules contradict, resolve using (in order):
+1. **Hierarchy of norms:** Constitution > EU Treaties and Regulations > Loi > Décret > Arrêté
+2. **Principle of specialty:** lex specialis derogat legi generali — the more specific text prevails
+3. **Chronology:** lex posterior derogat legi priori — the more recent text prevails (same-level norms only)
+
+For each conflict: identify the competing norms, state which principle resolves the conflict, explain why one prevails, and cite the authority for this resolution (Constitutional Council decision, CJEU ruling, etc.).
+
+### 4. Synthèse croisée (Cross-Synthesis)
+**Conditional section — include ONLY if issues interact. If all issues are fully independent with no interactions, replace with a brief statement confirming their independence.**
+
+Analyze how the intermediate conclusions from section 2 interact:
+- Does resolving issue #1 change the analysis of issue #3?
+- Are there cascade effects (one outcome triggering another)?
+- What is the globally motivated conclusion when all issues are considered together?
+
+This section must produce a unified conclusion that accounts for all issues simultaneously.
+
+### 5. Solutions & recommandations (Solutions and Recommendations)
+Concrete options accounting for ALL issues at once (not domain by domain). For each option:
+- Action to take
+- Legal basis
+- Risks and likelihood of success
+- Relevant deadlines (prescription, délai de forclusion, délai de recours)
+- Priority level (urgent / normal / optional)
+
+If recommending one option over others, explain why.
+
+### 6. Mise en garde (Disclaimer)
+Standard mandatory disclaimer in the user's language. Same as all other templates.
+
+**Conditional sections summary:** Sections 1, 2, 5, and 6 are always mandatory. Section 3 is included only when a norm conflict is detected. Section 4 is included only when issues interact (otherwise replaced by independence statement).
+
+**Example skeleton:**
+
+```
+## Analyse de cas complexe
+
+**Cartographie des problèmes de droit**
+
+| N° | Problème | Domaine(s) | Lié à |
+|----|----------|------------|-------|
+| 1  | Le licenciement est-il justifié ? | Travail | — |
+| 2  | La surveillance des e-mails était-elle licite ? | Numérique, Travail | N°1 |
+| 3  | Le salarié peut-il invoquer la protection des lanceurs d'alerte ? | Pénal, Travail | N°1, N°2 |
+
+**Problème n°1 : Le licenciement est-il justifié ?**
+Majeure : Aux termes de l'art. L. 1232-1 C. trav., tout licenciement doit être justifié par une cause réelle et sérieuse...
+Mineure : En l'espèce, l'employeur invoque la faute grave consistant en...
+Conclusion intermédiaire : Le licenciement pour faute grave apparaît / n'apparaît pas justifié au regard de...
+
+**Problème n°2 : La surveillance des e-mails était-elle licite ?**
+Majeure : ...
+Mineure : ...
+Conclusion intermédiaire : ...
+
+**Problème n°3 : Protection lanceur d'alerte ?**
+Majeure : L'art. L. 1132-3-3 C. trav. (loi Sapin II) protège...
+Mineure : ...
+Conclusion intermédiaire : ...
+
+**Résolution des conflits de normes**
+Le droit à la vie privée du salarié (art. 8 CEDH, art. 9 C. civ.) entre en tension avec le pouvoir de contrôle de l'employeur (art. L. 1121-1 C. trav.)...
+Résolution : La CEDH a posé le test de proportionnalité (CEDH, Barbulescu c. Roumanie, 2017)...
+
+**Synthèse croisée**
+Si la surveillance est déclarée illicite (problème n°2), les preuves obtenues sont irrecevables, ce qui affaiblit le fondement du licenciement (problème n°1). Par ailleurs, si la qualité de lanceur d'alerte est retenue (problème n°3), le licenciement constituerait une mesure de représailles prohibée...
+Conclusion globale : ...
+
+**Solutions & recommandations**
+1. Contester le licenciement devant le CPH en soulevant les trois moyens conjointement...
+2. Saisir la CNIL pour la surveillance illicite des e-mails...
+Recommandation : Priorité à l'action 1 (délai de prescription : 12 mois, art. L. 1471-1 C. trav.)...
+
+---
+*Ces informations sont fournies à titre indicatif et ne constituent pas un avis juridique...*
 ```
