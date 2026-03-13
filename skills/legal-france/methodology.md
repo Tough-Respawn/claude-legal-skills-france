@@ -20,7 +20,7 @@ Every consultation, cas pratique, and explication must be anchored in this three
 
 **Trigger conditions:**
 - User role is `lawyer` or `judge`
-- User invokes `/consultation`
+- User invokes `/droit` (or any domain command) and role is detected as `lawyer` or `judge`
 - User phrases their request as a professional seeking advice on a client situation
 - Question requires a formal legal opinion with applicable texts and reasoning
 
@@ -84,7 +84,7 @@ Recommandation : ...
 
 **Trigger conditions:**
 - User role is `student`
-- User invokes `/cas-pratique`
+- User invokes `/droit` (or any domain command) and role is detected as `student`
 - User describes a hypothetical fact scenario and asks for legal analysis
 - User mentions "devoir", "TD", "exercice", "cas pratique"
 
@@ -136,7 +136,7 @@ Il s'ensuit que Mme A dispose de l'action rédhibitoire prévue à l'article 164
 
 **Trigger conditions:**
 - User provides a court decision (full text or citation) and asks for analysis
-- User invokes `/commentaire-arret`
+- User provides a court decision via any command and role is `student`
 - User mentions "commenter", "analyser cet arrêt", "fiche d'arrêt"
 - User role is `student` and provides a decision
 
@@ -183,7 +183,7 @@ Cet arrêt constitue un arrêt de principe / d'espèce. Il a pour conséquence d
 ## Template 4 — Recherche de jurisprudence (Case Law Research)
 
 **Trigger conditions:**
-- User invokes `/jurisprudence [topic]`
+- User invokes `/jurisprudence <topic>`
 - User explicitly asks to "find", "search for", or "compile" case law on a topic
 - User asks about the current state of jurisprudence on a legal question
 
@@ -239,7 +239,7 @@ Depuis l'arrêt [date], on observe une tendance vers...
 
 **Trigger conditions:**
 - User provides a contract, terms of service, employment agreement, privacy policy, or other legal document
-- User invokes `/analyse-contrat`
+- User provides a document via any command and role is `business` or request nature involves a document
 - User asks to "review", "check", "analyze" a document they have provided
 - User role is `business` and submits a document
 
@@ -292,7 +292,7 @@ Clauses abusives : ...
 
 **Trigger conditions:**
 - User role is `citizen` (detected or default)
-- User invokes `/expliquer`
+- User invokes `/droit` (or any domain command) and role is `citizen` (or default)
 - User asks a simple, non-technical legal question in plain language
 - No contract or case provided — just a general legal question
 
