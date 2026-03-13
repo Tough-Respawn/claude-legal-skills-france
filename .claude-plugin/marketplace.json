@@ -1,34 +1,22 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "legal-france",
+  "description": "French law assistant with domain-specific expertise across civil, criminal, labor, business, administrative, digital, and European law",
   "owner": {
     "name": "Amine Harrak",
-    "url": "https://github.com/Tough-Respawn"
-  },
-  "metadata": {
-    "description": "French law assistant with domain-specific expertise across civil, criminal, labor, business, administrative, digital, and European law. Supports legal consultation, case law research, contract analysis, and document parsing.",
-    "version": "0.1.0",
-    "repository": "https://github.com/Tough-Respawn/claude-legal-skills-france"
+    "email": "amineharrak@proton.me"
   },
   "plugins": [
     {
       "name": "legal-france",
       "description": "French law assistant covering civil, criminal, labor, business, administrative, digital, and European law. Adapts to user role (lawyer, judge, student, citizen). Use when user asks about French legislation, legal analysis, contract review, case law research, or mentions 'droit', 'loi', 'article', 'jurisprudence', 'contrat', 'licenciement', 'RGPD', 'Code civil', 'Code penal'.",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/legal-france"
-      ],
-      "commands": [
-        "./commands/droit.md",
-        "./commands/jurisprudence.md",
-        "./commands/droit-civil.md",
-        "./commands/droit-penal.md",
-        "./commands/droit-travail.md",
-        "./commands/droit-affaires.md",
-        "./commands/droit-administratif.md",
-        "./commands/droit-numerique.md",
-        "./commands/droit-europeen.md"
-      ]
+      "version": "0.1.0",
+      "author": {
+        "name": "Amine Harrak"
+      },
+      "source": "./plugins/legal-france",
+      "category": "knowledge",
+      "homepage": "https://github.com/Tough-Respawn/claude-legal-skills-france"
     }
   ]
 }
