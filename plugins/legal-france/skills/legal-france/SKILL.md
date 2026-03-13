@@ -59,6 +59,28 @@ If multiple domains are implicated (e.g., a question about an employment contrac
 
 ---
 
+## Progress Indicators
+
+When processing a question, **always display a brief status line before each major step** so the user can follow your progress in real time. Use this format:
+
+> **[1/5]** Identification du domaine juridique...
+> **[2/5]** Chargement des références...
+> **[3/5]** Vérification sur Legifrance...
+> **[4/5]** Analyse et recoupement des sources...
+> **[5/5]** Rédaction de la réponse...
+
+For complex cases (multi-domain), add intermediate steps:
+
+> **[2/6]** Chargement des références (droit du travail + droit numérique)...
+> **[3/6]** Décomposition des problèmes de droit...
+
+**Rules:**
+- Output each status line **immediately** before starting that step — do not batch them.
+- Use the user's language (French examples above; adapt to English if the user writes in English).
+- Keep status lines short (one line each, no details).
+
+---
+
 ## Research Protocol
 
 Follow these five steps in order before composing your response:
