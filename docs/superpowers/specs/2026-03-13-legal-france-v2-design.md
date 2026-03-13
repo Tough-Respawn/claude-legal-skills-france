@@ -39,7 +39,8 @@ When a complex case is detected, the plugin MUST:
 2. **Load all domains** — Read ALL reference files for every domain implicated
 3. **Treat sequentially** — Apply the full syllogism (Majeure → Mineure → Conclusion) to each issue independently
 4. **Cross-synthesis** — Analyze interactions: does resolving issue #1 change the answer to issue #3? Are there contradictions? What is the priority order of norms?
-5. **Force template #7** — Use the "Cas complexe" template from methodology.md instead of the role-default template
+5. **Force template #7** — Use the "Cas complexe" template from methodology.md instead of the role-default template. **Priority rule:** Complex Case Protocol overrides role-default and nature-default template selection (Response Protocol priorities 2 and 3), but does NOT override explicit command-triggered templates (priority 1). If a command is used AND a complex case is detected, use the command's template but incorporate the Synthèse croisée section from template #7 as an addendum.
+6. **Context bound** — Load all implicated domain files. If more than 3 domains are implicated, load the primary domain in full and load only the Key Articles and Landmark Decisions sections from secondary domains.
 
 ---
 
@@ -72,7 +73,9 @@ When rules contradict: apply hierarchy of norms (Constitution > EU Treaties > Lo
 Only include this section if a norm conflict was detected. Skip if all issues are independent.
 
 #### 4. Synthèse croisée
-How intermediate conclusions interact. Does resolving issue #1 change the analysis of issue #3? Cascade effects? Globally motivated conclusion.
+How intermediate conclusions interact. Does resolving issue #1 change the analysis of issue #3? Cascade effects? Globally motivated conclusion. If all issues are fully independent with no interactions, replace with a brief statement confirming their independence.
+
+**Conditional sections:** Sections 1, 2, 5, and 6 are always mandatory. Section 3 is included only when a norm conflict is detected. Section 4 is included only when issues interact (otherwise replaced by independence statement).
 
 #### 5. Solutions & recommandations
 Concrete options accounting for ALL issues simultaneously (not domain by domain). Risks, deadlines, action priorities.
@@ -104,20 +107,24 @@ When a locally referenced article has been modified according to the web source:
 - Use the web version (most current)
 - Signal the divergence to the user: "Note : l'article X a été modifié depuis la dernière mise à jour de mes références embarquées. Je cite la version en vigueur consultée sur Legifrance."
 
+### Web verification failure handling
+
+If web tools are available but the verification query fails or returns inconclusive results (Legifrance down, ambiguous results, article split into sub-articles), treat as if tools are unavailable and display the same warning.
+
 Steps 1, 3, 4, 5 remain unchanged.
 
 ---
 
 ## Change 4 — Enriched Domain References
 
-**Location:** All 7 `references/<domain>.md` files.
+**Location:** All 8 `references/<domain>.md` files.
 
 ### Targets per domain file
 
-| Metric | v1 | v2 target |
-|--------|-----|-----------|
-| Key articles | ~12-15 | ~50-60 |
-| Landmark decisions | 4-6 | 12-15 |
+| Metric | v1 (varies by domain) | v2 target |
+|--------|----------------------|-----------|
+| Key articles | ~10-18 | ~50-60 |
+| Landmark decisions | 4-8 | 12-15 |
 | Recent reforms section | none | Last 3 years (2023-2026) |
 
 ### Enrichment principles
@@ -136,18 +143,20 @@ Steps 1, 3, 4, 5 remain unchanged.
 5. `administratif.md`
 6. `numerique.md`
 7. `europeen.md`
+8. `procedure.md`
 
 ---
 
 ## Change 5 — Enriched Transversal References
 
-**Location:** 3 existing transversal files.
+**Location:** 4 existing transversal files.
 
 | File | v1 | v2 target |
 |------|-----|-----------|
 | `codes-index.md` | Index with article ranges | Add parties/livres/titres for finer navigation |
 | `jurisprudence-cle.md` | 5-8 decisions per domain | 12-15 per domain, aligned with domain files |
 | `glossaire.md` | ~80-100 terms FR↔EN | ~150-180 terms, add procedural and EU terms |
+| `sources.md` | Legal database search guide | Enrich with additional databases and search tips per domain |
 
 ---
 
@@ -155,7 +164,7 @@ Steps 1, 3, 4, 5 remain unchanged.
 
 | File | Type of change |
 |------|---------------|
-| `SKILL.md` | Add Complex Case Protocol block + modify Research Protocol |
+| `SKILL.md` | Add Complex Case Protocol block (~250 words) + modify Research Protocol (~180 words) + update Response Protocol for template #7 priority (~50 words) |
 | `methodology.md` | Add Template #7 "Cas complexe" |
 | `references/civil.md` | Enrich articles + jurisprudence + reforms |
 | `references/penal.md` | Enrich articles + jurisprudence + reforms |
@@ -164,13 +173,15 @@ Steps 1, 3, 4, 5 remain unchanged.
 | `references/administratif.md` | Enrich articles + jurisprudence + reforms |
 | `references/numerique.md` | Enrich articles + jurisprudence + reforms |
 | `references/europeen.md` | Enrich articles + jurisprudence + reforms |
+| `references/procedure.md` | Enrich articles + jurisprudence + reforms |
 | `references/codes-index.md` | Enrich structure (parties/livres/titres) |
 | `references/jurisprudence-cle.md` | Enrich to 12-15 per domain |
 | `references/glossaire.md` | Expand to ~150-180 terms |
+| `references/sources.md` | Enrich with additional databases and search tips |
 
 **Files created:** 0
-**Files modified:** 12
-**Estimated SKILL.md word count after v2:** ~2000-2200 words (under 5000 limit)
+**Files modified:** 14
+**Estimated SKILL.md word count after v2:** ~1,820 words (1,338 current + ~250 Complex Case Protocol + ~180 Research Protocol changes + ~50 Response Protocol update) — well under 5,000 limit
 
 ---
 
