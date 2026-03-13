@@ -292,6 +292,166 @@ This glossary covers general legal terms, civil law, criminal law, procedure, bu
 
 ---
 
+---
+
+# Additional Procedural Terms
+
+## Procedural Law — Civil and Criminal Procedure
+
+**Audience** / *Hearing* — A session during which a court hears the parties, their counsel, and, where applicable, witnesses or experts. May be public (audience publique) or held in closed session (chambre du conseil / huis clos) for certain family or juvenile matters.
+
+**Cassation** / *Cassation* — The annulment by the Cour de cassation (judicial order) or the Conseil d'État (administrative order) of a lower-court decision on the ground that it misapplied the law. The court does not re-examine facts; it either quashes and remands (cassation avec renvoi) or rules definitively without remand (cassation sans renvoi).
+
+**Commissaire de justice** / *Judicial enforcement officer (commissaire de justice)* — A ministerial officer created by the ordonnance of 2 June 2016, merging the professions of huissier de justice and commissaire-priseur judiciaire. Effective since 1 July 2022. Serves documents, enforces judgments, conducts public auctions, and makes official reports (constats).
+
+**Comparution** / *Appearance (before a court)* — The act by which a party presents themselves — in person or through counsel — before a court after being summoned. Failure to appear (défaut de comparution) may lead to a default judgment (jugement par défaut or jugement réputé contradictoire).
+
+**Délai de forclusion** / *Time-bar / Forfeiture period* — A strict deadline within which a procedural step or action must be taken, on pain of losing the right to act (déchéance). Unlike prescription, forclusion cannot generally be suspended or interrupted and is often raised by the court of its own motion.
+
+**Exception d'incompétence** / *Plea of lack of jurisdiction* — A procedural objection (exception de procédure) by which a party challenges the jurisdiction of the court — material (ratione materiae) or territorial (ratione loci). Must be raised in limine litis, before any defense on the merits (CPC art. 74).
+
+**Exécution provisoire** / *Provisional enforcement* — The right to enforce a first-instance judgment immediately, even though it may be appealed. Since the decree of 11 December 2019, exécution provisoire is the default (de droit) for all judgments of the tribunal judiciaire (CPC art. 514). The court or the first president of the cour d'appel may suspend it.
+
+**Fin de non-recevoir** / *Plea of inadmissibility* — A procedural defense that bars a claim without examination of the merits. Classic grounds: lack of standing (défaut de qualité), lack of interest (défaut d'intérêt), expiry of time limits, res judicata, and failure to attempt mediation where mandatory (CPC art. 122). May be raised at any stage.
+
+**Greffe** / *Clerk's office (court registry)* — The administrative office of a court, staffed by greffiers (court clerks), responsible for receiving filings, scheduling hearings, keeping the court record (plumitif), authenticating and issuing copies of decisions, and managing the court's register.
+
+**Incident de procédure** / *Procedural incident* — Any procedural event or application that interrupts or modifies the ordinary course of proceedings (e.g., exception de procédure, fin de non-recevoir, intervention of a third party, joinder, change of counsel). Ruled on by the juge de la mise en état in ordinary civil procedure.
+
+**Mise en état** / *Pre-trial case management* — The preparatory phase of ordinary civil proceedings during which the juge de la mise en état (case management judge) monitors the exchange of written submissions (conclusions), orders disclosure, sets timetables, and resolves procedural incidents before the case goes to the hearing on the merits (CPC arts. 780–807).
+
+**Ministère public** / *Public prosecution service (Ministère public)* — The body of magistrats (procureurs, avocats généraux) representing the general interest of society in criminal and certain civil proceedings. Acts as partie principale in criminal matters (prosecution) and as partie jointe (advisory role) in civil matters where the law so provides.
+
+**Partie civile** / *Civil party (partie civile)* — A victim of a criminal offence who joins the criminal proceedings (by constitution de partie civile) to claim damages from the accused. The civil party may trigger prosecution by filing a complaint with the juge d'instruction even if the procureur declines to prosecute (CPP art. 85).
+
+**Prescription acquisitive** / *Acquisitive prescription (usucapion)* — A mode of acquiring ownership through continuous, peaceful, public, and unambiguous possession for a statutory period: 30 years for immovables (art. 2272 Code civil), reduced to 10 years for a possessor in good faith with a just title. Also applies to movables (art. 2276 — possession vaut titre).
+
+**Requête** / *Petition / Ex parte application* — A written application addressed to a court, often without notice to the opposing party (procédure sur requête / procédure non contradictoire). Used for urgent or confidential measures (CPC art. 493 et seq.) such as saisie conservatoire (protective attachment) or ordonnance sur requête.
+
+**Sursis à statuer** / *Stay of proceedings* — A judicial decision temporarily suspending the proceedings pending the resolution of a preliminary issue: outcome of another trial, prejudicial question to another court, or awaiting a decision on a constitutional issue (QPC) or EU preliminary ruling. May be ordered by the court or at the request of a party (CPC art. 378).
+
+**Conclusions** / *Written submissions (conclusions)* — The formal pleadings filed by a party's counsel in civil proceedings, stating the claims, arguments of fact and law, and the relief sought. The court must rule on all claims raised in the dernières conclusions (latest submissions) and only on those claims (CPC art. 768).
+
+**Connexité** / *Joinder / Related proceedings* — The procedural ground allowing a party to request that related cases pending before different courts be joined before a single court, to avoid conflicting decisions (CPC art. 101). Distinguished from litispendance (same case before two courts).
+
+**Déclinatoire de compétence** / *Declination of jurisdiction* — A formal objection raised by the préfet before a judicial court claiming that the dispute falls within the jurisdiction of the administrative courts. Triggers a potential conflict of jurisdiction resolved by the Tribunal des conflits.
+
+**Désistement** / *Withdrawal / Discontinuance* — The act by which a party abandons their claim (désistement d'instance — withdrawal from proceedings) or renounces the right of action itself (désistement d'action). The former can be made unilaterally before the opponent has raised a defense on the merits (CPC art. 394).
+
+**Expertise** / *Expert assessment* — A mesure d'instruction by which the court appoints a technical expert to investigate and report on factual questions requiring specialized knowledge (CPC arts. 263–284-1). The expert's report is advisory; the court decides freely.
+
+**Homologation judiciaire** / *Judicial approval (homologation)* — A court's endorsement of a private agreement or a non-judicial decision, conferring enforceable force. Examples include homologation of a divorce settlement (convention de divorce), a conciliation protocol, or a mediation agreement.
+
+**Intervention** / *Third-party intervention* — The procedural mechanism by which a person not originally party to the proceedings joins or is brought into the case. Intervention volontaire: the third party enters of their own accord. Intervention forcée: a party brings them in.
+
+**Litispendance** / *Lis pendens* — A situation in which two courts of the same degree and order are seized of the same dispute between the same parties. The second court seized must decline jurisdiction in favor of the first (CPC art. 100).
+
+**Opposition** / *Opposition (default-judgment challenge)* — An ordinary voie de recours allowing a party against whom a jugement par défaut was rendered (because they did not appear) to bring the case back before the same court for full adversarial hearing (CPC art. 571). Time limit: 1 month from service.
+
+**Signification** / *Service (of a legal document)* — The formal delivery of a legal document (judgment, summons, writ) by a commissaire de justice (formerly huissier) to its addressee, creating an official record of delivery date and content. Required to start running of many time limits.
+
+**Voies de recours** / *Remedies / Avenues of appeal* — The procedural mechanisms for challenging a court decision. Ordinary remedies: appel (appeal) and opposition (default-judgment challenge). Extraordinary remedies: pourvoi en cassation, tierce opposition (third-party opposition), and recours en révision (revision).
+
+---
+
+# EU Law Terms
+
+## Droit de l'Union européenne — European Union Law
+
+**Acquis communautaire** / *EU acquis (acquis communautaire)* — The accumulated body of EU law, including treaties, regulations, directives, case law of the CJEU, and international agreements. Candidate states must adopt the full acquis as a condition of accession.
+
+**Clause de sauvegarde** / *Safeguard clause* — A treaty or legislative provision allowing a Member State to derogate temporarily from an EU obligation in exceptional circumstances (e.g., serious economic difficulties, public order threats). Subject to strict conditions and Commission oversight (e.g., TFEU arts. 114(10), 143, 347).
+
+**Comitologie** / *Comitology* — The system of committees composed of Member State representatives that assist and oversee the European Commission in the adoption of implementing measures (actes d'exécution) under EU legislation. Governed by Regulation (EU) No 182/2011.
+
+**Coopération renforcée** / *Enhanced cooperation* — A mechanism (TFEU arts. 326–334) allowing a minimum of nine Member States to establish advanced integration among themselves in a specific policy area, when unanimity in the full Council cannot be achieved. Open to all Member States at any time.
+
+**Directive** / *Directive (EU)* — A binding EU legislative act that sets out the result to be achieved but leaves Member States the choice of form and methods of transposition into national law (TFEU art. 288). Must be transposed within the deadline; failure triggers infringement proceedings and, in some cases, direct effect (Ratti, Marleasing).
+
+**Marge d'appréciation** / *Margin of appreciation / Margin of discretion* — The latitude granted to Member States (or national authorities) in implementing EU law or ECHR obligations. Wider for politically sensitive areas (e.g., national security, morality) and narrower where EU harmonization is high. Key concept in both CJEU and ECtHR case law.
+
+**Marché intérieur** / *Internal market (single market)* — The area without internal frontiers in which the free movement of goods, persons, services, and capital is ensured (TFEU art. 26). Cornerstone of the EU economic order, underpinned by the four freedoms and the principle of mutual recognition.
+
+**Primauté** / *Primacy (supremacy)* — The principle established in Costa v. ENEL (CJCE 1964) that EU law takes precedence over conflicting national law, including constitutional provisions. In France, the Conseil constitutionnel acknowledges primacy for EU law under art. 88-1 Constitution but reserves the identity constitutionnelle of France.
+
+**Procédure législative ordinaire** / *Ordinary legislative procedure (co-decision)* — The standard EU legislative procedure (TFEU art. 294) in which the European Parliament and the Council of the EU act as co-legislators on a Commission proposal. Involves up to three readings and, if needed, a conciliation committee.
+
+**Proportionnalité** / *Proportionality (EU)* — The principle (TEU art. 5(4)) that EU action shall not exceed what is necessary to achieve the objectives of the Treaties. Assessed by the CJEU using a three-step test: suitability, necessity, and proportionality stricto sensu (balancing).
+
+**Question préjudicielle** / *Preliminary reference / Preliminary ruling question* — A question referred by a national court to the Court of Justice of the EU (CJEU) under TFEU art. 267 for an authoritative interpretation of EU law or a ruling on the validity of EU acts. Courts of last instance are obliged to refer (CILFIT exceptions apply).
+
+**Reconnaissance mutuelle** / *Mutual recognition* — The principle that goods lawfully produced or marketed in one Member State must in principle be admitted in other Member States (Cassis de Dijon, CJCE 1979). Extended to judicial cooperation (European arrest warrant, judgments under Brussels I bis, etc.).
+
+**Recours en annulation** / *Action for annulment* — An action before the CJEU (TFEU art. 263) seeking the annulment of an EU institution's act on grounds of lack of competence, infringement of an essential procedural requirement, infringement of the Treaties, or misuse of powers. Time limit: 2 months from publication or notification.
+
+**Recours en carence** / *Action for failure to act* — An action before the CJEU (TFEU art. 265) brought against an EU institution that has failed to act in breach of the Treaties. The institution must first be called upon to act; if it fails to define its position within 2 months, the action may be brought within a further 2 months.
+
+**Recours en manquement** / *Infringement proceedings* — An action brought by the European Commission (or, rarely, a Member State) against a Member State before the CJEU (TFEU arts. 258–260) for failure to fulfil obligations under EU law. May result in financial penalties (lump sum and/or daily penalty payment) for non-compliance.
+
+**Règlement (UE)** / *Regulation (EU)* — A binding EU legislative act of general application that is directly applicable in all Member States without transposition (TFEU art. 288). Creates uniform rules across the EU (e.g., GDPR — Regulation (EU) 2016/679).
+
+**Renvoi préjudiciel** / *Preliminary reference (renvoi préjudiciel)* — The procedure (TFEU art. 267) by which a national court refers a question to the CJEU on the interpretation of EU law or the validity of acts of EU institutions. The CJEU's ruling is binding on the referring court and all national courts. See also: question préjudicielle.
+
+**Subsidiarité** / *Subsidiarity* — The principle (TEU art. 5(3)) that in areas of shared competence, the EU shall act only if the objectives cannot be sufficiently achieved by the Member States and can be better achieved at EU level. National parliaments have an early-warning mechanism ("yellow card / orange card") to enforce it.
+
+**Transposition** / *Transposition* — The process by which a Member State incorporates an EU directive into its national legal order through domestic legislation or regulation within the prescribed deadline. Failure to transpose or incorrect transposition may lead to recours en manquement proceedings and State liability (Francovich).
+
+**Compétence exclusive (UE)** / *Exclusive competence (EU)* — A policy area in which only the EU may legislate and adopt binding acts; Member States may do so only if empowered by the EU (TFEU art. 3). Includes customs union, competition rules for the internal market, monetary policy (eurozone), common commercial policy, and conservation of marine biological resources.
+
+**Compétence partagée** / *Shared competence (EU)* — A policy area in which both the EU and Member States may legislate (TFEU art. 4). Once the EU has exercised its competence, Member States may no longer act in the area covered. Includes internal market, environment, energy, transport, consumer protection.
+
+**Effet utile** / *Useful effect (effet utile)* — An interpretive principle whereby EU law provisions must be given the construction that best ensures their practical effectiveness. Frequently invoked by the CJEU to ensure that EU rights are not rendered illusory by national procedural rules.
+
+**Libre circulation** / *Free movement* — The four fundamental freedoms of the internal market: free movement of goods (TFEU arts. 28–37), persons (arts. 45–55), services (arts. 56–62), and capital (arts. 63–66). Restrictions may be justified by overriding reasons of public interest, subject to proportionality.
+
+---
+
+# Digital and Data Protection Terms
+
+## Droit du numérique et protection des données — Digital Law and Data Protection
+
+**AIPD (Analyse d'impact relative à la protection des données)** / *DPIA (Data Protection Impact Assessment)* — A mandatory assessment under RGPD art. 35 for processing operations likely to result in a high risk to the rights and freedoms of natural persons (e.g., large-scale profiling, systematic monitoring of public areas). Must be conducted before processing begins.
+
+**BCR (Règles d'entreprise contraignantes)** / *BCR (Binding Corporate Rules)* — Internal policies adopted by a multinational group and approved by a supervisory authority, permitting the transfer of personal data outside the EEA within the group (RGPD art. 47). An alternative to standard contractual clauses for intra-group transfers.
+
+**Clauses contractuelles types** / *Standard contractual clauses (SCCs)* — Model contractual clauses adopted by the European Commission (RGPD art. 46(2)(c)) providing appropriate safeguards for the transfer of personal data to third countries. Revised SCCs adopted by Commission Decision 2021/914.
+
+**Consentement (RGPD)** / *Consent (GDPR)* — One of the six legal bases for processing personal data (RGPD art. 6(1)(a)). Must be freely given, specific, informed, and unambiguous (RGPD art. 7). For sensitive data or direct marketing, explicit or specific consent is required. Withdrawable at any time.
+
+**Donnée à caractère personnel** / *Personal data* — Any information relating to an identified or identifiable natural person (data subject), directly (name, photo) or indirectly (IP address, location data, online identifier). Defined in RGPD art. 4(1). The cornerstone concept of EU data protection law.
+
+**DPO (Délégué à la protection des données)** / *DPO (Data Protection Officer)* — An independent officer designated under RGPD art. 37 by public bodies or organizations whose core activities involve large-scale systematic monitoring or processing of sensitive data. Advises on compliance, monitors implementation, and acts as contact point for the CNIL and data subjects.
+
+**Droit à l'oubli** / *Right to erasure / Right to be forgotten* — The data subject's right to obtain the deletion of personal data where the data is no longer necessary, consent is withdrawn, or processing is unlawful (RGPD art. 17). Originally established in CJEU Google Spain (2014). May be limited by freedom of expression or legal obligations.
+
+**Éditeur** / *Publisher (of an online service)* — The natural or legal person who determines the content published on a website or online service and bears editorial responsibility. Subject to the obligations of the loi pour la confiance dans l'économie numérique (LCEN, 21 June 2004) art. 6-III (mandatory legal notices).
+
+**Hébergeur** / *Hosting provider* — A natural or legal person that provides storage of content supplied by the recipient of the service (LCEN art. 6-I-2). Benefits from a conditional liability exemption: not liable unless it had actual knowledge of the illegal content and failed to act promptly to remove it.
+
+**Notification de violation** / *Data breach notification* — The obligation under RGPD art. 33 for the data controller to notify the supervisory authority (CNIL in France) of a personal data breach within 72 hours of becoming aware of it, where the breach is likely to result in a risk to the rights and freedoms of natural persons. Data subjects must also be informed if the risk is high (art. 34).
+
+**Profilage** / *Profiling* — Any form of automated processing of personal data that evaluates personal aspects of a natural person, in particular to analyze or predict work performance, economic situation, health, preferences, reliability, behavior, location, or movements (RGPD art. 4(4)). Subject to transparency and right-to-object obligations.
+
+**Registre des traitements** / *Record of processing activities* — A written record maintained by the data controller (and, where applicable, the processor) documenting all processing activities under their responsibility (RGPD art. 30). Must contain the purposes, categories of data, recipients, transfers, retention periods, and security measures.
+
+**Responsable de traitement** / *Data controller* — The natural or legal person, public authority, or body that determines the purposes and means of the processing of personal data (RGPD art. 4(7)). Bears primary responsibility for RGPD compliance, including lawfulness, data minimization, security, and data subject rights.
+
+**Sous-traitant (RGPD)** / *Data processor* — A natural or legal person that processes personal data on behalf of the data controller (RGPD art. 4(8)). Must act only on documented instructions from the controller and offer sufficient guarantees. The relationship must be governed by a written contract (art. 28).
+
+**STAD (Système de traitement automatisé de données)** / *Automated data processing system* — A concept from French criminal law (Code pénal arts. 323-1 to 323-8) covering computer systems and networks. Unauthorized access, disruption, or data modification of a STAD constitutes a criminal offence punishable by imprisonment and fines.
+
+**Anonymisation** / *Anonymization* — The irreversible processing of personal data such that the data subject can no longer be identified, directly or indirectly, by any means reasonably likely to be used. Anonymized data falls outside the scope of the RGPD. Distinguished from pseudonymisation, which is reversible.
+
+**CNIL (Commission nationale de l'informatique et des libertés)** / *French Data Protection Authority (CNIL)* — The independent administrative authority responsible for ensuring compliance with data protection legislation in France (loi Informatique et Libertés, 6 January 1978, and RGPD). Has powers of investigation, corrective measures, and the ability to impose administrative fines up to EUR 20 million or 4% of global annual turnover.
+
+**Droit à la portabilité** / *Right to data portability* — The data subject's right to receive their personal data in a structured, commonly used, and machine-readable format and to transmit it to another controller without hindrance (RGPD art. 20). Applies where processing is based on consent or contract and is carried out by automated means.
+
+**Pseudonymisation** / *Pseudonymization* — The processing of personal data in such a manner that the data can no longer be attributed to a specific data subject without the use of additional information, kept separately and subject to technical and organizational measures (RGPD art. 4(5)). Data remains personal data but benefits from reduced risk.
+
+**Transfert de données hors UE** / *Data transfer outside the EU* — The transfer of personal data to a third country or international organization, permitted only where an adequate level of protection is ensured: adequacy decision by the Commission, appropriate safeguards (SCCs, BCR), or a derogation under RGPD art. 49. Post-Schrems II, additional supplementary measures may be required.
+
+---
+
 ## Quick-reference: French court hierarchy
 
 ```
