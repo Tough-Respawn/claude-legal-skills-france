@@ -10,7 +10,7 @@
     {
       "name": "legal-france",
       "description": "French law assistant covering civil, criminal, labor, business, administrative, digital, and European law. Adapts to user role (lawyer, judge, student, citizen). Use when user asks about French legislation, legal analysis, contract review, case law research, or mentions 'droit', 'loi', 'article', 'jurisprudence', 'contrat', 'licenciement', 'RGPD', 'Code civil', 'Code penal'.",
-      "version": "0.1.0",
+      "version": "2.0.0",
       "author": {
         "name": "Amine Harrak"
       },
