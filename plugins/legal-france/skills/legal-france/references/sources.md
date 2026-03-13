@@ -236,3 +236,190 @@ Cass. civ. 1re, 12 janv. 2023, n° 21-12.345, Bull. civ. I, n° 5
 | Find a CJEU judgment | EUR-Lex | EUR-Lex case law section |
 | Find a CNIL sanction | cnil.fr | Légifrance (if published in JORF) |
 | Check administrative procedure steps | service-public.fr | Code de justice administrative on Légifrance |
+
+---
+
+## Domain-specific search tips
+
+### Droit civil
+
+**Best Légifrance filters:** Category "Codes en vigueur" → Code civil, Code de la consommation, Code des assurances. For case law, filter by "Cour de cassation" → chambres civiles (civ. 1re for obligations/contrats/personnes, civ. 2e for responsabilité/procédure civile, civ. 3e for immobilier/baux).
+
+**Specialized databases:**
+- **Cour de cassation — Bulletin civil:** For leading published decisions, filter publication status `P` (publié). Pre-2017 decisions are organized in Bull. civ. I through IV by chamber.
+- **Service-public.fr:** Useful for plain-language summaries of family law, succession, and consumer protection procedures.
+
+**Example searches:**
+- Légifrance: `"article 1240" responsabilité délictuelle` in Jurisprudence → Cour de cassation → civ. 2e
+- Légifrance code browser: Code civil → Livre III → Titre IV bis (Responsabilité extracontractuelle, post-réforme 2025)
+- Cour de cassation advanced search: chamber = `civ. 1re`, keyword = `vice du consentement`, publication = `P`
+
+### Droit pénal
+
+**Best Légifrance filters:** Category "Codes en vigueur" → Code pénal, Code de procédure pénale. For case law, filter by "Cour de cassation" → chambre criminelle (`crim.`). Date range filters are critical for tracking changes in sentencing policy.
+
+**Specialized databases:**
+- **Cour de cassation — Bulletin criminel:** Filter by `crim.` chamber and publication status `P` for landmark criminal decisions.
+- **Conseil constitutionnel — QPC:** Many QPC decisions concern criminal law (principes de légalité, proportionnalité des peines). Search by keyword on conseil-constitutionnel.fr.
+- **CEDH/ECHR (HUDOC):** For challenges based on Article 6 (fair trial) or Article 7 (no punishment without law) of the Convention.
+
+**Example searches:**
+- Légifrance: `"article 121-3" faute non intentionnelle` in Jurisprudence → Cour de cassation → crim.
+- Légifrance code browser: Code pénal → Livre II → Titre II (Atteintes à la personne humaine)
+- Conseil constitutionnel: keyword `proportionnalité des peines` filtered by decision type `QPC`
+
+### Droit du travail
+
+**Best Légifrance filters:** Category "Codes en vigueur" → Code du travail. For case law, filter by "Cour de cassation" → chambre sociale (`soc.`). Also search in "Conventions collectives" for sector-specific rules.
+
+**Specialized databases:**
+- **Convention collective search on Légifrance:** Dedicated search at "Accords collectifs et conventions collectives" — filter by IDCC number (identifiant de convention collective) or by sector.
+- **DARES (Direction de l'animation de la recherche, des études et des statistiques):** For labor market statistics cited in policy arguments.
+- **Rapports du Conseil d'État et Cour de cassation:** Annual reports often include thematic studies on labor law topics (e.g., contrat de travail, temps de travail).
+
+**Example searches:**
+- Légifrance: `licenciement économique motif réel et sérieux` in Jurisprudence → Cour de cassation → soc.
+- Conventions collectives: IDCC `0016` (Transports routiers) or keyword search `télétravail`
+- Légifrance: `"article L.1232-1" entretien préalable` in Codes → Code du travail
+
+### Droit des affaires
+
+**Best Légifrance filters:** Category "Codes en vigueur" → Code de commerce, Code monétaire et financier. For case law, filter by "Cour de cassation" → chambre commerciale (`com.`). For IP disputes, also check civ. 1re and tribunal judiciaire de Paris.
+
+**Specialized databases:**
+- **INPI (Institut national de la propriété industrielle):** https://www.inpi.fr — Search trademark, patent, and design registrations. The INPI database (`bases-brevets.inpi.fr`, `bases-marques.inpi.fr`) provides registration details and oppositions.
+- **AMF (Autorité des marchés financiers):** https://www.amf-france.org — Decisions, sanctions, and regulations on financial markets.
+- **ADLC (Autorité de la concurrence):** https://www.autoritedelaconcurrence.fr — Decisions on anticompetitive practices, mergers.
+- **Registre du commerce (Infogreffe):** https://www.infogreffe.fr — Company filings, financial statements, insolvency proceedings.
+
+**Example searches:**
+- Légifrance: `concurrence déloyale parasitisme` in Jurisprudence → Cour de cassation → com.
+- INPI: trademark name search in `bases-marques.inpi.fr` to check prior registrations
+- AMF: sanctions search filtered by year and type (manquement d'initié, manipulation de cours)
+
+### Droit administratif
+
+**Best Légifrance filters:** Category "Jurisprudence administrative" → filter by court (Conseil d'État, cours administratives d'appel, tribunaux administratifs). Use "Textes" section to search décrets, arrêtés, and circulaires.
+
+**Specialized databases:**
+- **Arianeweb (Conseil d'État):** https://www.conseil-etat.fr/fr/recherche-avancee-en-jurisprudence — The primary advanced search tool for all administrative case law. Filters by formation de jugement, rapporteur public, and Lebon publication status.
+- **DILA / circulaires.gouv.fr:** Repository of government circulars and instructions — useful for understanding how ministries interpret legislation.
+- **Recueil Lebon:** The official compendium of selected administrative law decisions. On Arianeweb, filter by `Recueil Lebon` or `Tables du Recueil Lebon` for published decisions.
+
+**Example searches:**
+- Arianeweb: formation = `Assemblée`, keyword = `responsabilité sans faute`, period = 2020-2026
+- Légifrance: `excès de pouvoir annulation` in Jurisprudence administrative → Conseil d'État
+- circulaires.gouv.fr: keyword search for a specific ministerial instruction (e.g., `instruction fiscale BOI-CF`)
+
+### Droit du numérique
+
+**Best Légifrance filters:** Relevant codes include Code des postes et des communications électroniques, and provisions in Code pénal (cyber offences, art. 323-1 et seq.) and Code civil (droit à l'image, art. 9). For EU texts, use EUR-Lex to find the GDPR (Règlement 2016/679), the Digital Services Act, the AI Act.
+
+**Specialized databases:**
+- **CNIL — Délibérations et sanctions:** https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil — Full list of sanctions with deliberation numbers. Filter by theme (cookies, données de santé, vidéosurveillance, IA).
+- **CNIL — Lignes directrices:** Thematic guides on GDPR compliance (e.g., cookies, sous-traitance, AIPD/DPIA).
+- **ANSSI (Agence nationale de la sécurité des systèmes d'information):** https://www.ssi.gouv.fr — Cybersecurity standards and regulatory frameworks.
+- **EDPB (European Data Protection Board):** https://edpb.europa.eu — Guidelines, opinions, and consistency decisions on GDPR interpretation across the EU.
+
+**Example searches:**
+- CNIL: sanction search filtered by theme `cookies et traceurs` or `transferts de données`
+- Légifrance: `"article 323-1" système de traitement automatisé` in Jurisprudence → Cour de cassation → crim.
+- EUR-Lex: CELEX `32016R0679` for GDPR full text; keyword `intelligence artificielle` in secondary legislation
+
+### Droit européen
+
+**Best Légifrance filters:** Use the "Droit européen" section on Légifrance for EU texts transposed into French law. For ECHR-related case law, search in Jurisprudence → filter by references to the Convention européenne des droits de l'homme.
+
+**Specialized databases:**
+- **CURIA (CJUE):** https://curia.europa.eu — Full search engine for Court of Justice and General Court decisions. Filter by type of procedure (renvoi préjudiciel, recours en annulation, recours en manquement), chamber, and subject matter.
+- **HUDOC (CEDH/ECHR):** https://hudoc.echr.coe.int — Complete database of European Court of Human Rights judgments and decisions. Filter by respondent state (`France`), article of the Convention, and importance level.
+- **EUR-Lex:** See dedicated section below. For consolidated versions of directives and regulations, use the "Consolidated text" tab.
+- **EU Official Journal (JOUE):** Available on EUR-Lex. L series = legislation; C series = information and notices.
+
+**Example searches:**
+- CURIA: procedure type = `Renvoi préjudiciel`, keyword = `protection des données`, year = 2023-2026
+- HUDOC: respondent = `France`, article = `Article 8` (vie privée), importance = `Key cases`
+- EUR-Lex: browse JOUE L series for a specific regulation publication date
+
+### Droit de la procédure
+
+**Best Légifrance filters:** Category "Codes en vigueur" → Code de procédure civile, Code de procédure pénale, Code de justice administrative. For case law, filter by "Cour de cassation" → civ. 2e (procédure civile), crim. (procédure pénale), or by "Conseil d'État" for administrative procedure.
+
+**Specialized databases:**
+- **Cour de cassation — civ. 2e:** The second civil chamber handles most procedural appeals (délais, voies de recours, exécution des jugements).
+- **Service-public.fr — Procédures:** Step-by-step guides for saisine du tribunal, référé, injonction de payer, aide juridictionnelle.
+- **Annuaire des juridictions:** https://www.justice.fr — Find the competent court by location and subject matter.
+
+**Example searches:**
+- Légifrance: `"article 700" frais irrépétibles` in Jurisprudence → Cour de cassation → civ. 2e
+- Légifrance code browser: Code de procédure civile → Livre I → Titre XVI (Mesures d'exécution forcée)
+- Service-public.fr: `saisir le tribunal judiciaire` for step-by-step procedural guidance
+
+---
+
+## EU Sources — Advanced Guide
+
+### EUR-Lex — Advanced search
+
+**URL:** https://eur-lex.europa.eu/advanced-search-form.html
+
+EUR-Lex advanced search allows precise filtering across the entire EU legal corpus:
+
+- **By document type:** Regulation, directive, decision, recommendation, opinion, international agreement, CJEU case law.
+- **By CELEX number:** Enter the sector-year-type-number code directly (e.g., `32016R0679` for GDPR).
+- **By date:** Filter by date of document, date of effect, or transposition deadline.
+- **By EuroVoc descriptor:** Use the controlled thesaurus to filter by subject (e.g., `protection des données`, `marché intérieur`, `concurrence`).
+- **By author institution:** European Commission, Council, Parliament, or joint authorship.
+- **Consolidated texts:** Tick the "Consolidated version" box to see legislation as amended, rather than the original text.
+- **National transposition measures:** For directives, the "National transposition" tab lists implementing measures by Member State — filter by `France` to see how a directive was transposed.
+- **Legal basis search:** Filter by Treaty article to find all secondary legislation adopted under a given legal basis (e.g., Article 114 TFUE for internal market harmonization).
+
+### CURIA — Court of Justice of the EU (CJUE)
+
+**URL:** https://curia.europa.eu/juris/recherche.jsf?language=fr
+
+CURIA is the official search engine for the case law of the Court of Justice (CJUE), the General Court (Tribunal), and historical decisions of the Civil Service Tribunal.
+
+- **Search by case number:** Enter the case number in format `C-NNN/YY` (Court of Justice) or `T-NNN/YY` (General Court).
+- **Search by ECLI:** Use the European Case Law Identifier format `ECLI:EU:C:[year]:[number]`.
+- **Filter by procedure type:** Renvoi préjudiciel (preliminary reference), recours en annulation (action for annulment), recours en manquement (infringement proceedings), recours en carence (failure to act), pourvoi (appeal from General Court).
+- **Filter by subject matter:** Use the subject-matter classification (e.g., "Rapprochement des législations", "Politique sociale", "Environnement").
+- **Advocate General opinions:** Search separately for conclusions de l'avocat général — these are often cited as persuasive authority and may signal future jurisprudential shifts.
+- **Pending cases:** The "Affaires introduites" section tracks newly filed cases and pending references, useful for monitoring emerging legal questions.
+
+**Citation format:**
+```
+CJUE, [date], [name], aff. C-[number]/[year], EU:C:[year]:[number]
+```
+Example: `CJUE, 16 juil. 2020, Schrems II, aff. C-311/18, EU:C:2020:559`
+
+### HUDOC — European Court of Human Rights (CEDH/ECHR)
+
+**URL:** https://hudoc.echr.coe.int
+
+HUDOC provides access to the full case law of the European Court of Human Rights, the European Commission of Human Rights (historical), and the Committee of Ministers' resolutions.
+
+- **Search by application number:** Enter the application number in format `NNNNN/YY` (e.g., `36769/08`).
+- **Filter by respondent State:** Select `France` to find all cases against France.
+- **Filter by Convention article:** Select one or more articles (e.g., Article 6 — droit à un procès équitable, Article 8 — droit au respect de la vie privée, Article 10 — liberté d'expression).
+- **Filter by importance level:** `Key cases` (highest doctrinal significance), `Case Reports` (selected for official reports), and others.
+- **Filter by violation found:** Narrow to cases where the Court found a violation, a non-violation, or struck the case out.
+- **Legal summaries:** HUDOC provides case summaries (fiches thématiques) organized by Convention article — helpful for identifying leading ECHR case law on a topic.
+
+**Citation format:**
+```
+CEDH, [date], [name] c. [State], req. n° [number]
+```
+Example: `CEDH, 26 juin 2014, Mennesson c. France, req. n° 65192/11`
+
+### EU Official Journal (JOUE)
+
+**URL:** https://eur-lex.europa.eu/oj/direct-access.html
+
+The Official Journal of the European Union (JOUE) is the official publication instrument for EU law and information:
+
+- **L series (Législation):** Binding legislative acts — regulations, directives, decisions. An act enters into force only upon publication in the L series (or on the date specified therein).
+- **C series (Communications et informations):** Non-binding acts, notices, information from EU institutions, including opinions, recommendations, and European Parliament resolutions.
+- **Browse by date:** Direct access by year, month, and day of publication.
+- **Search by OJ reference:** Enter the series, number, and page (e.g., `JOUE L 119, 4.5.2016, p. 1` for the GDPR).
+- **E-only publication:** Since 1 July 2013, the electronic edition of the JOUE is the sole authentic version (Regulation (EU) No 216/2013).
