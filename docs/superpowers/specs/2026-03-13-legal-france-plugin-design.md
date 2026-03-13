@@ -2,7 +2,7 @@
 
 **Date:** 2026-03-13
 **Author:** Amine Harrak
-**Status:** Draft
+**Status:** Approved
 **Plugin Name:** `legal-france`
 
 ---
@@ -13,7 +13,7 @@ A Claude Code plugin providing comprehensive French law assistance. The plugin a
 
 ### Goals
 - Provide accurate, well-sourced legal information on French law
-- Support 8 domains of French law with domain-specific expertise
+- Support 7 domains of French law with domain-specific commands + 1 cross-cutting procedural reference
 - Offer 6 structured response formats aligned with French legal methodology
 - Enable case law research via web and local document parsing
 - Publish as an open-source plugin on the Claude Code marketplace
@@ -94,7 +94,7 @@ description: "French law assistant covering civil, criminal, labor, business, ad
 - Always cites precisely: article number, decision date, pourvoi number
 
 #### 3.2 User Role Detection
-Detect from context or ask explicitly:
+Detect from context or ask explicitly. **Default fallback: `citizen`** (plain language explanation) if role cannot be determined and user does not clarify.
 
 | Role | Language Level | Default Format |
 |------|---------------|----------------|
@@ -130,10 +130,10 @@ Step 5: If information cannot be verified → state uncertainty clearly
 ```
 
 #### 3.5 Response Protocol
-Select response template from `methodology.md` based on:
-1. The command used (e.g., `/jurisprudence` → case law research format)
-2. The detected user role
-3. The nature of the request (document provided → document analysis)
+Select response template from `methodology.md` (located at `skills/legal-france/methodology.md`) using **strict priority order**:
+1. **Command used** (highest priority — e.g., `/jurisprudence` → case law research format)
+2. **Detected user role** (e.g., student → cas pratique format)
+3. **Nature of the request** (lowest priority — e.g., document provided → document analysis)
 
 #### 3.6 Mandatory Disclaimer
 Every response ends with a disclaimer adapted to the user's language:
@@ -215,7 +215,20 @@ argument-hint: <your legal question>
 allowed-tools: [Read, Grep, Glob, WebSearch, WebFetch]
 ---
 ```
-Instructions: Invoke the legal-france skill. Detect the domain from the question, load relevant references, apply the appropriate response template.
+Full example of the command file body:
+
+```markdown
+Invoke the `legal-france` skill to answer the user's question.
+
+## Workflow
+1. Detect the legal domain from the question keywords
+2. Read the relevant `references/<domain>.md` file from the skill directory
+3. Also read `references/codes-index.md` for quick article lookup
+4. Apply the response template matching the user's role (see methodology.md)
+5. If embedded references are insufficient, use WebSearch to query Legifrance
+6. Cite all sources precisely (article numbers, decision references)
+7. End with the mandatory legal disclaimer
+```
 
 **`/jurisprudence <search>`**
 ```yaml
@@ -287,7 +300,8 @@ Source: [Legifrance URL]
 | `jurisprudence-cle.md` | 50-100 landmark decisions across all domains (Blanco, Jand'heur, Perruche, Nikon, etc.) |
 | `glossaire.md` | Legal terms FR with definitions + EN translations for international users |
 | `sources.md` | How to search Legifrance, EUR-Lex, CNIL, Conseil constitutionnel — URLs, search tips, decision number formats |
-| `methodology.md` | The 6 response templates detailed in Section 4 |
+
+**Note:** `methodology.md` lives at `skills/legal-france/methodology.md` (peer to SKILL.md), NOT inside `references/`. It contains the 6 response templates detailed in Section 4. `procedure.md` is a cross-cutting reference (no dedicated command) loaded when procedural questions arise in any domain.
 
 ### 6.3 v1 Scope per Domain
 - 10-15 most important articles
