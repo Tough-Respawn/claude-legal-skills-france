@@ -5,55 +5,424 @@
 - Loi Informatique et Libertés (loi n° 78-17 du 6 janvier 1978, modifiée par la loi n° 2018-493 du 20 juin 2018)
 - Loi pour la confiance dans l'économie numérique (LCEN — loi n° 2004-575 du 21 juin 2004)
 - Directive e-Privacy (Directive 2002/58/CE du Parlement européen et du Conseil, 12 juillet 2002)
+- Digital Services Act (DSA) — Règlement UE 2022/2065 du 19 octobre 2022
+- Digital Markets Act (DMA) — Règlement UE 2022/1925 du 14 septembre 2022
+- Règlement sur l'intelligence artificielle (AI Act) — Règlement UE 2024/1689 du 13 juin 2024
+- Data Act — Règlement UE 2023/2854 du 13 décembre 2023
+- Code pénal — Livre II, Titre II (atteintes à la personnalité) et Titre III (atteintes aux STAD)
 
 ## Key Articles
 
-### RGPD Article 5 — Principes relatifs au traitement des données à caractère personnel
-> « Les données à caractère personnel doivent être : a) traitées de manière licite, loyale et transparente au regard de la personne concernée (licéité, loyauté, transparence) ; b) collectées pour des finalités déterminées, explicites et légitimes, et ne pas être traitées ultérieurement d'une manière incompatible avec ces finalités (limitation des finalités) ; c) adéquates, pertinentes et limitées à ce qui est nécessaire au regard des finalités pour lesquelles elles sont traitées (minimisation des données) ; d) exactes et, si nécessaire, tenues à jour (exactitude) ; e) conservées sous une forme permettant l'identification des personnes concernées pendant une durée n'excédant pas celle nécessaire au regard des finalités pour lesquelles elles sont traitées (limitation de la conservation) ; f) traitées de façon à garantir une sécurité appropriée des données (intégrité et confidentialité). »
+### RGPD — Principes fondamentaux (art. 5-9)
+
+#### RGPD Article 5 — Principes relatifs au traitement des données à caractère personnel
+- Numéro : 5
+- Titre : Six principes fondamentaux du traitement
+- Mots-clés : licéité, loyauté, transparence, limitation des finalités, minimisation des données, exactitude, limitation de la conservation, intégrité et confidentialité, accountability (art. 5(2))
+
+#### RGPD Article 6 — Licéité du traitement
+- Numéro : 6
+- Titre : Six bases légales du traitement
+- Mots-clés : consentement, exécution d'un contrat, obligation légale, intérêts vitaux, mission d'intérêt public, intérêts légitimes
+
+#### RGPD Article 7 — Conditions applicables au consentement
+- Numéro : 7
+- Titre : Preuve et conditions du consentement
+- Mots-clés : démonstration du consentement, retrait à tout moment, simplicité du retrait, consentement libre, non-conditionné à l'exécution d'un contrat
+
+#### RGPD Article 8 — Conditions applicables au consentement des enfants
+- Numéro : 8
+- Titre : Consentement des enfants en ce qui concerne les services de la société de l'information
+- Mots-clés : mineur, âge, consentement parental, services numériques, 16 ans (seuil par défaut, abaissé à 15 ans en France par la LIL)
 Source: Journal officiel de l'UE / Legifrance
 
-### RGPD Article 6 — Licéité du traitement
-> « Le traitement n'est licite que si, et dans la mesure où, au moins une des conditions suivantes est remplie : a) la personne concernée a consenti au traitement de ses données à caractère personnel pour une ou plusieurs finalités spécifiques ; b) le traitement est nécessaire à l'exécution d'un contrat auquel la personne concernée est partie [...] ; c) le traitement est nécessaire au respect d'une obligation légale [...] ; d) le traitement est nécessaire à la sauvegarde des intérêts vitaux de la personne concernée [...] ; e) le traitement est nécessaire à l'exécution d'une mission d'intérêt public [...] ; f) le traitement est nécessaire aux fins des intérêts légitimes poursuivis par le responsable du traitement ou par un tiers [...]. »
+#### RGPD Article 9 — Traitement portant sur des catégories particulières de données
+- Numéro : 9
+- Titre : Données sensibles — interdiction de principe et exceptions
+- Mots-clés : données sensibles, origine raciale ou ethnique, opinions politiques, convictions religieuses, données génétiques, données biométriques, données de santé, vie sexuelle, consentement explicite, intérêt public
 Source: Journal officiel de l'UE / Legifrance
 
-### RGPD Article 7 — Conditions applicables au consentement
-> « Lorsque le traitement repose sur le consentement, le responsable du traitement est en mesure de démontrer que la personne concernée a consenti au traitement de données à caractère personnel la concernant. [...] La personne concernée a le droit de retirer son consentement à tout moment. Le retrait du consentement ne compromet pas la licéité du traitement fondé sur le consentement effectué avant ce retrait. La personne concernée en est informée avant que son consentement soit donné. Il est aussi simple de retirer son consentement que de le donner. »
-Source: Journal officiel de l'UE / Legifrance
+### RGPD — Droits des personnes concernées (art. 12-22)
 
-### RGPD Articles 12-22 — Droits des personnes concernées
-> Art. 15 (droit d'accès) : « La personne concernée a le droit d'obtenir du responsable du traitement la confirmation que des données à caractère personnel la concernant sont ou ne sont pas traitées [...]. »
-> Art. 17 (droit à l'effacement / "droit à l'oubli") : « La personne concernée a le droit d'obtenir du responsable du traitement l'effacement, dans les meilleurs délais, de données à caractère personnel la concernant [...]. »
-> Art. 20 (droit à la portabilité) : « La personne concernée a le droit de recevoir les données à caractère personnel la concernant qu'elle a fournies à un responsable du traitement, dans un format structuré, couramment utilisé et lisible par machine [...]. »
-> Art. 21 (droit d'opposition) : « La personne concernée a le droit de s'opposer à tout moment, pour des raisons tenant à sa situation particulière, à un traitement des données à caractère personnel la concernant [...]. »
-Source: Journal officiel de l'UE / Legifrance
+#### RGPD Article 12 — Transparence des informations et des communications
+- Numéro : 12
+- Titre : Transparence — modalités de communication avec la personne concernée
+- Mots-clés : forme concise, transparente, compréhensible, aisément accessible, langage clair et simple, délai d'un mois
 
-### RGPD Article 25 — Protection des données dès la conception et protection des données par défaut
-> « Compte tenu de l'état des connaissances, des coûts de mise en œuvre et de la nature, de la portée, du contexte et des finalités du traitement ainsi que des risques, dont le degré de probabilité et de gravité varie, que présente le traitement pour les droits et libertés des personnes physiques, le responsable du traitement met en œuvre, tant au moment de la détermination des moyens du traitement qu'au moment du traitement lui-même, des mesures techniques et organisationnelles appropriées [...] pour garantir que, par défaut, seules les données à caractère personnel qui sont nécessaires au regard de chaque finalité spécifique du traitement sont traitées. »
-Source: Journal officiel de l'UE / Legifrance
+#### RGPD Article 13 — Informations à fournir lors de la collecte directe
+- Numéro : 13
+- Titre : Information lorsque les données sont collectées auprès de la personne concernée
+- Mots-clés : identité du responsable, finalités, base juridique, destinataires, durée de conservation, droits
 
-### RGPD Article 33 — Notification à l'autorité de contrôle d'une violation de données
-> « En cas de violation de données à caractère personnel, le responsable du traitement en notifie la violation en question à l'autorité de contrôle compétente [...] dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance [...]. »
-Source: Journal officiel de l'UE / Legifrance
+#### RGPD Article 14 — Informations à fournir en cas de collecte indirecte
+- Numéro : 14
+- Titre : Information lorsque les données n'ont pas été collectées auprès de la personne
+- Mots-clés : source des données, catégories de données, information dans un délai raisonnable
 
-### RGPD Articles 37-39 — Délégué à la protection des données (DPO)
-> Art. 37(1) : « Le responsable du traitement et le sous-traitant désignent en tout état de cause un délégué à la protection des données lorsque : a) le traitement est effectué par une autorité publique ou un organisme public [...] ; b) les activités de base du responsable du traitement ou du sous-traitant consistent en des opérations de traitement qui, du fait de leur nature, de leur portée et/ou de leurs finalités, exigent un suivi régulier et systématique à grande échelle des personnes concernées ; c) les activités de base du responsable du traitement ou du sous-traitant consistent en un traitement à grande échelle de catégories particulières de données visées à l'article 9 [...]. »
-Source: Journal officiel de l'UE / Legifrance
+#### RGPD Article 15 — Droit d'accès de la personne concernée
+- Numéro : 15
+- Titre : Droit d'obtenir confirmation et copie des données traitées
+- Mots-clés : accès, copie des données, finalités, catégories, destinataires, durée, droits, source
 
-### RGPD Article 83 — Conditions générales pour imposer des amendes administratives
-> « Les violations des dispositions suivantes font l'objet, conformément au paragraphe 2, d'amendes administratives pouvant s'élever jusqu'à 20 000 000 EUR ou, dans le cas d'une entreprise, jusqu'à 4 % du chiffre d'affaires annuel mondial total de l'exercice précédent, le montant le plus élevé étant retenu [...]. »
-Source: Journal officiel de l'UE / Legifrance
+#### RGPD Article 16 — Droit de rectification
+- Numéro : 16
+- Titre : Rectification des données inexactes
+- Mots-clés : rectification, données incomplètes, déclaration complémentaire, sans retard injustifié
 
-### Loi Informatique et Libertés Article 1
+#### RGPD Article 17 — Droit à l'effacement (« droit à l'oubli »)
+- Numéro : 17
+- Titre : Effacement des données dans les meilleurs délais
+- Mots-clés : droit à l'oubli, données plus nécessaires, retrait du consentement, opposition, traitement illicite, obligation légale, exceptions (liberté d'expression, obligation légale, intérêt public, archivage)
+
+#### RGPD Article 18 — Droit à la limitation du traitement
+- Numéro : 18
+- Titre : Limitation du traitement
+- Mots-clés : contestation de l'exactitude, traitement illicite, opposition en attente de vérification, gel des données
+
+#### RGPD Article 20 — Droit à la portabilité des données
+- Numéro : 20
+- Titre : Portabilité — réception et transmission des données dans un format lisible par machine
+- Mots-clés : format structuré, couramment utilisé, lisible par machine, transmission directe entre responsables
+
+#### RGPD Article 21 — Droit d'opposition
+- Numéro : 21
+- Titre : Opposition au traitement pour raisons tenant à la situation particulière
+- Mots-clés : opposition, situation particulière, prospection commerciale (opposition sans motif), profilage
+
+#### RGPD Article 22 — Décision individuelle automatisée, y compris le profilage
+- Numéro : 22
+- Titre : Droit de ne pas faire l'objet d'une décision fondée exclusivement sur un traitement automatisé
+- Mots-clés : profilage, décision automatisée, effets juridiques, intervention humaine, droit de contestation, consentement explicite
+
+### RGPD — Responsable de traitement et sous-traitant (art. 24-43)
+
+#### RGPD Article 24 — Responsabilité du responsable du traitement
+- Numéro : 24
+- Titre : Obligation de mise en œuvre de mesures techniques et organisationnelles appropriées
+- Mots-clés : accountability, politiques de protection, démonstration de conformité
+
+#### RGPD Article 25 — Protection des données dès la conception et par défaut
+- Numéro : 25
+- Titre : Privacy by design et privacy by default
+- Mots-clés : mesures techniques et organisationnelles, dès la conception, par défaut, minimisation, pseudonymisation, état des connaissances, coûts
+
+#### RGPD Article 26 — Responsables conjoints du traitement
+- Numéro : 26
+- Titre : Coresponsabilité — obligations en cas de détermination conjointe des finalités
+- Mots-clés : accord transparent, répartition des obligations, point de contact, droits des personnes concernées
+
+#### RGPD Article 28 — Sous-traitant
+- Numéro : 28
+- Titre : Encadrement contractuel du sous-traitant
+- Mots-clés : contrat ou acte juridique, instructions documentées, sous-traitance ultérieure, audit, suppression en fin de contrat
+
+#### RGPD Article 30 — Registre des activités de traitement
+- Numéro : 30
+- Titre : Obligation de tenir un registre
+- Mots-clés : registre, responsable, sous-traitant, finalités, catégories de données, transferts, délais d'effacement, mesures de sécurité
+
+#### RGPD Article 32 — Sécurité du traitement
+- Numéro : 32
+- Titre : Mesures de sécurité techniques et organisationnelles
+- Mots-clés : pseudonymisation, chiffrement, confidentialité, intégrité, disponibilité, résilience, tests réguliers
+
+#### RGPD Article 33 — Notification à l'autorité de contrôle d'une violation de données
+- Numéro : 33
+- Titre : Notification de violation dans les 72 heures
+- Mots-clés : violation de données, notification CNIL, 72 heures, nature de la violation, conséquences, mesures prises
+
+#### RGPD Article 34 — Communication à la personne concernée d'une violation de données
+- Numéro : 34
+- Titre : Information de la personne concernée en cas de violation à risque élevé
+- Mots-clés : risque élevé, communication dans les meilleurs délais, termes clairs et simples, mesures prises
+
+#### RGPD Article 35 — Analyse d'impact relative à la protection des données (AIPD/DPIA)
+- Numéro : 35
+- Titre : Analyse d'impact préalable obligatoire pour les traitements à risque élevé
+- Mots-clés : DPIA, AIPD, évaluation systématique, profilage, surveillance à grande échelle, données sensibles, consultation préalable CNIL
+
+#### RGPD Article 36 — Consultation préalable
+- Numéro : 36
+- Titre : Consultation de l'autorité de contrôle avant mise en œuvre si risque résiduel élevé
+- Mots-clés : CNIL, consultation préalable, délai de 8 semaines, avis
+
+#### RGPD Articles 37-39 — Délégué à la protection des données (DPO)
+- Numéro : 37-39
+- Titre : Désignation, fonction et missions du DPO
+- Mots-clés : DPO obligatoire (autorité publique, suivi systématique à grande échelle, données sensibles à grande échelle), indépendance, expertise, point de contact CNIL, conseil au responsable
+
+#### RGPD Article 40 — Codes de conduite
+- Numéro : 40
+- Titre : Élaboration de codes de conduite sectoriels
+- Mots-clés : code de conduite, associations, organismes représentatifs, approbation par l'autorité de contrôle
+
+#### RGPD Article 42 — Certification
+- Numéro : 42
+- Titre : Mécanismes de certification en matière de protection des données
+- Mots-clés : certification, label, sceau, organisme accrédité, démonstration de conformité
+
+### RGPD — Transferts internationaux (art. 44-49)
+
+#### RGPD Article 44 — Principe général applicable aux transferts
+- Numéro : 44
+- Titre : Interdiction de principe des transferts hors UE sans garanties
+- Mots-clés : transfert, pays tiers, organisation internationale, conditions du chapitre V
+
+#### RGPD Article 45 — Transferts fondés sur une décision d'adéquation
+- Numéro : 45
+- Titre : Décision d'adéquation de la Commission européenne
+- Mots-clés : adéquation, niveau de protection essentiellement équivalent, réexamen périodique, EU-US Data Privacy Framework
+
+#### RGPD Article 46 — Transferts moyennant des garanties appropriées
+- Numéro : 46
+- Titre : Garanties appropriées — clauses contractuelles types, BCR, etc.
+- Mots-clés : CCT/SCC, clauses contractuelles types, règles d'entreprise contraignantes, codes de conduite approuvés, certification
+
+#### RGPD Article 47 — Règles d'entreprise contraignantes (BCR)
+- Numéro : 47
+- Titre : Binding Corporate Rules pour transferts intra-groupe
+- Mots-clés : BCR, groupe d'entreprises, approbation par autorité chef de file, droits opposables
+
+#### RGPD Article 49 — Dérogations pour des situations particulières
+- Numéro : 49
+- Titre : Dérogations en l'absence de décision d'adéquation ou de garanties appropriées
+- Mots-clés : consentement explicite, exécution d'un contrat, motifs importants d'intérêt public, défense en justice, intérêts vitaux, transferts non répétitifs
+
+### RGPD — Recours et sanctions (art. 77-84)
+
+#### RGPD Article 77 — Droit d'introduire une réclamation auprès d'une autorité de contrôle
+- Numéro : 77
+- Titre : Réclamation auprès de la CNIL ou autre autorité
+- Mots-clés : réclamation, autorité de contrôle, État membre de résidence, lieu de travail, lieu de la violation
+
+#### RGPD Article 78 — Droit à un recours juridictionnel effectif contre une autorité de contrôle
+- Numéro : 78
+- Titre : Recours contre les décisions de l'autorité de contrôle
+- Mots-clés : recours juridictionnel, annulation, Conseil d'État (en France)
+
+#### RGPD Article 79 — Droit à un recours juridictionnel effectif contre un responsable du traitement ou un sous-traitant
+- Numéro : 79
+- Titre : Action en justice directe contre le responsable ou le sous-traitant
+- Mots-clés : tribunal compétent, État membre d'établissement, lieu de résidence habituelle
+
+#### RGPD Article 82 — Droit à réparation
+- Numéro : 82
+- Titre : Réparation du préjudice matériel ou moral
+- Mots-clés : dommages et intérêts, responsabilité solidaire, exonération si absence de fait générateur
+
+#### RGPD Article 83 — Conditions générales pour imposer des amendes administratives
+- Numéro : 83
+- Titre : Deux paliers d'amendes administratives
+- Mots-clés : palier 1 (10 M€ ou 2 % CA — obligations organisationnelles), palier 2 (20 M€ ou 4 % CA — principes, droits, transferts), proportionnalité, circonstances aggravantes/atténuantes
+
+#### RGPD Article 84 — Sanctions
+- Numéro : 84
+- Titre : Sanctions complémentaires prévues par les États membres
+- Mots-clés : sanctions pénales, infractions non couvertes par art. 83, droit national, proportionnalité
+
+### Loi Informatique et Libertés (loi n° 78-17)
+
+#### LIL Article 1 — Principe fondateur
 > « L'informatique doit être au service de chaque citoyen. Son développement doit s'opérer dans le cadre de la coopération internationale. Elle ne doit porter atteinte ni à l'identité humaine, ni aux droits de l'homme, ni à la vie privée, ni aux libertés individuelles ou publiques. »
 Source: Legifrance
 
-### Loi Informatique et Libertés Article 8 — Données sensibles
+#### LIL Article 2 — Définitions
+- Numéro : 2
+- Titre : Définition des données à caractère personnel et du traitement
+- Mots-clés : donnée à caractère personnel, personne identifiée ou identifiable, traitement, fichier, responsable du traitement
+
+#### LIL Article 4 — Rôle de la CNIL
+- Numéro : 4
+- Titre : Mission et pouvoirs de la Commission nationale de l'informatique et des libertés
+- Mots-clés : CNIL, autorité administrative indépendante, contrôle, sanctions, avis, information du public
+
+#### LIL Article 8 — Données sensibles
 > « Il est interdit de collecter ou de traiter des données à caractère personnel qui font apparaître, directement ou indirectement, les origines raciales ou ethniques, les opinions politiques, philosophiques ou religieuses ou l'appartenance syndicale des personnes, ou qui sont relatives à la santé ou à la vie sexuelle de celles-ci. »
 Source: Legifrance
 
-### LCEN Article 6 — Responsabilité des hébergeurs
+#### LIL Article 9 — Traitements de données pénales
+- Numéro : 9
+- Titre : Conditions spécifiques pour le traitement des données relatives aux infractions et condamnations
+- Mots-clés : données pénales, infractions, condamnations, mesures de sûreté, registre judiciaire, dérogation limitée
+
+#### LIL Article 11 — Pouvoirs de la CNIL
+- Numéro : 11
+- Titre : Énumération des missions et pouvoirs de la CNIL
+- Mots-clés : avis sur projets de loi, contrôles sur place, mises en demeure, sanctions, certification, information du public, coopération européenne
+
+#### LIL Article 13 — Composition et fonctionnement de la CNIL
+- Numéro : 13
+- Titre : Composition de la commission et formation restreinte
+- Mots-clés : 18 membres, formation plénière, formation restreinte (sanctions), commissaire du Gouvernement
+
+#### LIL Article 45 — Âge du consentement numérique des mineurs
+- Numéro : 45
+- Titre : Consentement des mineurs pour les services de la société de l'information
+- Mots-clés : mineur, 15 ans (France), consentement parental, services en ligne, adaptation de l'art. 8 RGPD
+
+### LCEN — Loi pour la confiance dans l'économie numérique (loi n° 2004-575)
+
+#### LCEN Article 1 — Liberté de communication en ligne
+- Numéro : 1
+- Titre : Principe de liberté de communication au public par voie électronique
+- Mots-clés : liberté de communication, limites, respect de la dignité, protection de la jeunesse, ordre public
+
+#### LCEN Article 6 — Responsabilité des hébergeurs
 > « Les personnes physiques ou morales qui assurent, même à titre gratuit, pour mise à disposition du public par des services de communication au public en ligne, le stockage de signaux, d'écrits, d'images, de sons ou de messages de toute nature fournis par des destinataires de ces services ne peuvent pas voir leur responsabilité civile engagée du fait des activités ou des informations stockées à la demande d'un destinataire de ces services si elles n'avaient pas effectivement connaissance de leur caractère illicite ou de faits et circonstances faisant apparaître ce caractère [...] »
 Source: Legifrance
+
+#### LCEN Article 6-I-2 — Fournisseurs d'accès à internet
+- Numéro : 6-I-2
+- Titre : Obligations des fournisseurs d'accès
+- Mots-clés : FAI, information des abonnés, moyens de restriction d'accès, filtrage parental
+
+#### LCEN Article 6-I-7 — Obligation de retrait des contenus illicites
+- Numéro : 6-I-7
+- Titre : Retrait prompt des contenus manifestement illicites après notification
+- Mots-clés : notification, retrait, contenu illicite, connaissance effective, réactivité
+
+#### LCEN Article 6-II — Conservation des données d'identification
+- Numéro : 6-II
+- Titre : Obligation de conservation des données permettant l'identification des créateurs de contenus
+- Mots-clés : conservation, données de connexion, identification, autorité judiciaire, durée de conservation
+
+#### LCEN Article 14 — Commerce électronique
+- Numéro : 14
+- Titre : Définition du commerce électronique
+- Mots-clés : activité économique, voie électronique, fourniture de biens ou services, contrats en ligne
+
+#### LCEN Article 19 — Obligations d'information en e-commerce
+- Numéro : 19
+- Titre : Mentions obligatoires du prestataire de commerce électronique
+- Mots-clés : identification du vendeur, conditions générales, prix, droit de rétractation, information précontractuelle
+
+### Code pénal — Infractions numériques
+
+#### Code pénal Article 226-16 — Traitements illicites de données personnelles
+- Numéro : 226-16
+- Titre : Fait de procéder à un traitement de données à caractère personnel sans respecter les formalités
+- Mots-clés : 5 ans d'emprisonnement, 300 000 € d'amende, traitement non autorisé, défaut de déclaration
+
+#### Code pénal Article 226-17 — Défaut de sécurité des données
+- Numéro : 226-17
+- Titre : Négligence dans la sécurité des données à caractère personnel
+- Mots-clés : 5 ans d'emprisonnement, 300 000 €, mesures de sécurité insuffisantes, précautions utiles
+
+#### Code pénal Article 226-18 — Collecte frauduleuse de données
+- Numéro : 226-18
+- Titre : Collecte de données par moyen frauduleux, déloyal ou illicite
+- Mots-clés : 5 ans d'emprisonnement, 300 000 €, collecte déloyale, fraude
+
+#### Code pénal Article 226-22 — Divulgation illicite de données personnelles
+- Numéro : 226-22
+- Titre : Divulgation non autorisée de données à caractère personnel
+- Mots-clés : 5 ans d'emprisonnement, 300 000 €, divulgation à des tiers, imprudence, négligence
+
+#### Code pénal Article 323-1 — Accès frauduleux à un STAD
+- Numéro : 323-1
+- Titre : Accès ou maintien frauduleux dans un système de traitement automatisé de données
+- Mots-clés : 3 ans d'emprisonnement, 100 000 €, piratage, accès non autorisé, STAD
+
+#### Code pénal Article 323-2 — Entrave au fonctionnement d'un STAD
+- Numéro : 323-2
+- Titre : Entrave ou faussement du fonctionnement d'un STAD
+- Mots-clés : 5 ans d'emprisonnement, 150 000 €, déni de service, sabotage informatique
+
+#### Code pénal Article 323-3 — Modification frauduleuse de données
+- Numéro : 323-3
+- Titre : Introduction, modification ou suppression frauduleuse de données dans un STAD
+- Mots-clés : 5 ans d'emprisonnement, 150 000 €, altération de données, injection
+
+### DSA — Digital Services Act (Règlement UE 2022/2065)
+
+#### DSA Article 3 — Définitions
+- Numéro : 3
+- Titre : Définitions clés du DSA
+- Mots-clés : service intermédiaire, hébergeur, plateforme en ligne, très grande plateforme, contenu illicite
+
+#### DSA Article 6 — Hébergement — exonération de responsabilité conditionnelle
+- Numéro : 6
+- Titre : Conditions d'exonération de responsabilité de l'hébergeur
+- Mots-clés : absence de connaissance, retrait ou blocage diligent, Good Samaritan
+
+#### DSA Article 14 — Conditions générales
+- Numéro : 14
+- Titre : Obligations de transparence dans les conditions générales
+- Mots-clés : modération de contenus, politique de modération, termes clairs, droits fondamentaux
+
+#### DSA Article 16 — Mécanismes de notification et d'action
+- Numéro : 16
+- Titre : Signalement des contenus illicites
+- Mots-clés : notice and action, signalement, retrait, motif, notification électronique
+
+#### DSA Article 34 — Évaluation des risques pour les très grandes plateformes
+- Numéro : 34
+- Titre : Obligation d'évaluation des risques systémiques
+- Mots-clés : VLOP, VLOSE, risques systémiques, désinformation, manipulation, mineurs, santé publique
+
+#### DSA Article 40 — Accès aux données pour les chercheurs
+- Numéro : 40
+- Titre : Accès aux données des très grandes plateformes à des fins de recherche
+- Mots-clés : chercheurs agréés, accès aux données, transparence algorithmique, recherche d'intérêt public
+
+#### DSA Article 52 — Sanctions
+- Numéro : 52
+- Titre : Amendes pour les très grandes plateformes
+- Mots-clés : jusqu'à 6 % du chiffre d'affaires mondial, astreintes, non-conformité
+
+### DMA — Digital Markets Act (Règlement UE 2022/1925)
+
+#### DMA Article 2 — Définitions
+- Numéro : 2
+- Titre : Définitions clés du DMA
+- Mots-clés : contrôleur d'accès (gatekeeper), service de plateforme essentiel, utilisateur professionnel, utilisateur final
+
+#### DMA Article 3 — Désignation des contrôleurs d'accès
+- Numéro : 3
+- Titre : Critères de désignation comme gatekeeper
+- Mots-clés : impact significatif sur le marché intérieur, service de plateforme essentiel, position ancrée et durable, seuils quantitatifs
+
+#### DMA Article 5 — Obligations des contrôleurs d'accès
+- Numéro : 5
+- Titre : Obligations directement applicables
+- Mots-clés : interdiction de combiner les données sans consentement, autorisation de désinstallation, interopérabilité de la messagerie, non-discrimination
+
+#### DMA Article 6 — Obligations susceptibles d'être précisées
+- Numéro : 6
+- Titre : Obligations pouvant être précisées par la Commission
+- Mots-clés : accès aux données, portabilité, auto-préférence interdite, conditions équitables, interopérabilité
+
+#### DMA Article 12 — Sanctions
+- Numéro : 12
+- Titre : Amendes en cas de non-conformité
+- Mots-clés : jusqu'à 10 % du chiffre d'affaires mondial, 20 % en cas de récidive, mesures correctives structurelles
+
+### AI Act — Règlement sur l'intelligence artificielle (Règlement UE 2024/1689)
+
+#### AI Act Article 5 — Pratiques d'IA interdites
+- Numéro : 5
+- Titre : Interdiction de certaines pratiques d'intelligence artificielle
+- Mots-clés : manipulation subliminale, exploitation de vulnérabilités, notation sociale (social scoring), identification biométrique à distance en temps réel (exceptions limitées)
+
+#### AI Act Article 6 — Systèmes d'IA à haut risque
+- Numéro : 6
+- Titre : Classification des systèmes d'IA à haut risque
+- Mots-clés : annexe III, identification biométrique, infrastructures critiques, éducation, emploi, services essentiels, justice, migration
+
+#### AI Act Article 9 — Gestion des risques
+- Numéro : 9
+- Titre : Système de gestion des risques pour l'IA à haut risque
+- Mots-clés : identification des risques, estimation, évaluation, mesures d'atténuation, cycle de vie
+
+#### AI Act Article 13 — Transparence et information des utilisateurs
+- Numéro : 13
+- Titre : Obligations de transparence pour les systèmes d'IA à haut risque
+- Mots-clés : instructions d'utilisation, capacités et limites, performance, surveillance humaine
+
+#### AI Act Article 52 — Obligations de transparence pour certains systèmes d'IA
+- Numéro : 52
+- Titre : Obligations de transparence (chatbots, deepfakes, systèmes de reconnaissance des émotions)
+- Mots-clés : information de l'utilisateur, interaction avec un système d'IA, contenu généré artificiellement, deepfake, étiquetage
 
 ## Core Principles
 
@@ -69,25 +438,104 @@ Source: Legifrance
 
 ## Landmark Decisions
 
-### CNIL c/ Google LLC — CNIL, 21 janvier 2019, SAN-2019-001
-- **Facts:** The CNIL investigated Google's data processing practices after complaints lodged by privacy advocacy groups (None Of Your Business and La Quadrature du Net) following the RGPD's entry into force. Google failed to provide users with sufficiently clear information about how their data was used and did not obtain valid consent for personalized advertising.
-- **Rule:** Valid consent under RGPD Art. 7 requires that it be freely given, specific, informed, and unambiguous. Consent obtained through pre-ticked boxes, overly general descriptions scattered across multiple documents, or through a single opt-in for multiple purposes does not meet these requirements.
-- **Significance:** The largest GDPR fine in France at the time (€50M). The decision clarified the standard of "informed consent" and the requirement that information be easily accessible and understandable — not buried in privacy policies. Set the tone for CNIL enforcement priorities.
+### Google Spain — CJUE, 13 mai 2014, C-131/12 (Google Spain SL et Google Inc. c/ AEPD et Mario Costeja González)
+- **Date :** 13 mai 2014
+- **Référence :** CJUE, C-131/12
+- **Résumé :** Un citoyen espagnol a demandé le déréférencement de liens vers des articles de presse mentionnant une ancienne saisie immobilière. La CJUE a jugé que l'exploitant d'un moteur de recherche est responsable du traitement des données personnelles apparaissant dans les résultats de recherche et qu'il doit, sous certaines conditions, supprimer les liens vers des pages contenant des informations portant atteinte à la vie privée.
+- **Portée :** Consécration du « droit à l'oubli » numérique (devenu RGPD art. 17). Obligation pour les moteurs de recherche de traiter les demandes de déréférencement. Fondement de la jurisprudence ultérieure sur l'équilibre entre droit à l'information et protection des données.
 
-### Schrems II — CJUE, 16 juillet 2020, C-311/18 (Data Protection Commissioner c/ Facebook Ireland Ltd et Maximillian Schrems)
-- **Facts:** Austrian activist Max Schrems challenged Facebook Ireland's transfers of his personal data to Facebook Inc. in the United States, arguing US surveillance laws prevented adequate protection. The case reached the CJEU after an Irish DPC referral, following on from Schrems I (2015) which had already invalidated the Safe Harbor agreement.
-- **Rule:** The EU-US Privacy Shield framework was declared invalid because US law does not ensure a level of protection essentially equivalent to that in the EU. Standard Contractual Clauses (SCCs) remain valid but must be supplemented by a case-by-case assessment of the legal framework in the destination country.
-- **Significance:** Invalidated the Privacy Shield used by over 5,000 companies for transatlantic data transfers. Forced businesses to conduct Transfer Impact Assessments (TIAs) for all third-country transfers. Led directly to the EU-US Data Privacy Framework (2023), itself currently under challenge.
+### Schrems I — CJUE, 6 octobre 2015, C-362/14 (Maximillian Schrems c/ Data Protection Commissioner)
+- **Date :** 6 octobre 2015
+- **Référence :** CJUE, C-362/14
+- **Résumé :** Max Schrems a contesté la validité de la décision Safe Harbor de la Commission européenne, arguant que la surveillance de masse aux États-Unis ne garantissait pas un niveau de protection adéquat. La CJUE a invalidé le Safe Harbor en constatant que les États-Unis n'assuraient pas un niveau de protection essentiellement équivalent à celui garanti dans l'UE.
+- **Portée :** Invalidation du Safe Harbor utilisé par des milliers d'entreprises. Affirmation du rôle des autorités nationales de contrôle dans l'examen des transferts. A conduit à l'adoption du Privacy Shield (2016), lui-même ensuite invalidé par Schrems II.
+
+### Fashion ID — CJUE, 29 juillet 2019, C-40/17 (Fashion ID GmbH & Co. KG c/ Verbraucherzentrale NRW eV)
+- **Date :** 29 juillet 2019
+- **Référence :** CJUE, C-40/17
+- **Résumé :** Fashion ID avait intégré sur son site web le bouton « J'aime » de Facebook, provoquant la transmission automatique de données des visiteurs à Facebook. La CJUE a jugé que l'exploitant d'un site web intégrant un tel module social est responsable conjoint du traitement (avec Facebook) pour la collecte et la transmission des données, mais pas pour les traitements ultérieurs effectués par Facebook.
+- **Portée :** Clarification de la notion de responsabilité conjointe (RGPD art. 26) dans le contexte des plug-ins de réseaux sociaux. Obligation pour les sites web d'obtenir un consentement valable avant l'activation de modules tiers collectant des données.
 
 ### Planet49 — CJUE, 1er octobre 2019, C-673/17 (Bundesverband der Verbraucherzentralen und Verbraucherverbände c/ Planet49 GmbH)
-- **Facts:** Planet49 ran an online promotional lottery. To enter, users were presented with a pre-ticked checkbox consenting to data collection by third-party sponsors. The German consumer federation challenged whether this constituted valid consent under the e-Privacy Directive and RGPD.
-- **Rule:** Consent to the storing of cookies (and analogous technologies) cannot be obtained through a pre-ticked checkbox. Consent must be an active, affirmative act. The controller must also provide clear information about the duration of cookies and whether third parties will have access.
-- **Significance:** Definitively ended the use of pre-ticked consent boxes for cookies across the EU. Directly shapes how cookie banners must be designed — requiring genuine opt-in, not opt-out. Applied by the CNIL in its cookie enforcement guidelines and subsequent sanctions.
+- **Date :** 1er octobre 2019
+- **Référence :** CJUE, C-673/17
+- **Résumé :** Planet49 a organisé un jeu promotionnel en ligne avec une case pré-cochée de consentement à la collecte de données par des sponsors tiers. La CJUE a jugé que le consentement au dépôt de cookies ne peut être obtenu par une case pré-cochée et doit résulter d'un acte positif clair.
+- **Portée :** Fin définitive des cases pré-cochées pour le consentement aux cookies dans toute l'UE. Impact direct sur la conception des bannières cookies. Appliqué par la CNIL dans ses lignes directrices cookies et sanctions ultérieures.
 
-### Google Analytics — CNIL, 10 février 2022 (mises en demeure)
-- **Facts:** Following Schrems II, the CNIL examined whether the use of Google Analytics by French websites resulted in unlawful transfers of personal data (IP addresses, unique identifiers) to the United States without adequate safeguards.
-- **Rule:** The use of Google Analytics as configured at the time constituted an unlawful transfer of personal data to the US, since Google could not guarantee protection from US intelligence agency access. Website operators were ordered to comply or cease using the tool.
-- **Significance:** One of the first coordinated enforcement actions post-Schrems II across multiple EU DPAs. Forced major rethinking of standard analytics tools and reinforced the need for data localization or adequately configured proxies for EU operators.
+### CNIL c/ Google LLC — CNIL, 21 janvier 2019, SAN-2019-001
+- **Date :** 21 janvier 2019
+- **Référence :** CNIL, SAN-2019-001
+- **Résumé :** La CNIL a examiné les pratiques de traitement de données de Google après des plaintes déposées par des associations de défense de la vie privée (NOYB et La Quadrature du Net) à la suite de l'entrée en vigueur du RGPD. Google n'a pas fourni aux utilisateurs des informations suffisamment claires sur l'utilisation de leurs données et n'a pas obtenu de consentement valable pour la publicité personnalisée.
+- **Portée :** Plus grande amende RGPD en France à l'époque (50 M€). Clarification du standard du « consentement éclairé » et de l'exigence d'accessibilité de l'information. A donné le ton des priorités d'application de la CNIL.
+
+### Schrems II — CJUE, 16 juillet 2020, C-311/18 (Data Protection Commissioner c/ Facebook Ireland Ltd et Maximillian Schrems)
+- **Date :** 16 juillet 2020
+- **Référence :** CJUE, C-311/18
+- **Résumé :** Max Schrems a contesté les transferts de données personnelles de Facebook Ireland vers Facebook Inc. aux États-Unis, arguant que les lois américaines de surveillance empêchaient une protection adéquate. La CJUE a invalidé le Privacy Shield et confirmé la validité des clauses contractuelles types (CCT), sous réserve d'une évaluation au cas par cas du cadre juridique du pays de destination.
+- **Portée :** Invalidation du Privacy Shield utilisé par plus de 5 000 entreprises. Obligation de réaliser des Transfer Impact Assessments (TIA) pour tout transfert hors UE. A conduit directement au EU-US Data Privacy Framework (2023).
+
+### Google Analytics — CNIL, 10 février 2022, mises en demeure
+- **Date :** 10 février 2022
+- **Référence :** CNIL, mises en demeure (décision coordonnée avec d'autres DPA européennes)
+- **Résumé :** La CNIL a examiné si l'utilisation de Google Analytics par des sites web français entraînait des transferts illicites de données personnelles (adresses IP, identifiants uniques) vers les États-Unis sans garanties adéquates post-Schrems II.
+- **Portée :** Action coordonnée post-Schrems II entre plusieurs DPA européennes. A forcé la révision des outils d'analyse web standards et renforcé l'exigence de localisation des données ou de proxies configurés de manière adéquate.
+
+### CNIL c/ Clearview AI — CNIL, 20 octobre 2022, SAN-2022-019
+- **Date :** 20 octobre 2022
+- **Référence :** CNIL, SAN-2022-019
+- **Résumé :** La CNIL a sanctionné Clearview AI (amende de 20 M€) pour collecte et utilisation illicites d'images faciales de personnes résidant en France sans base légale, en violation des droits d'accès et d'effacement. Clearview AI aspirait des photographies publiquement accessibles sur internet pour alimenter un logiciel de reconnaissance faciale.
+- **Portée :** Affirmation que le scraping massif de données biométriques sur internet ne peut être fondé sur l'intérêt légitime. Application extraterritoriale du RGPD. Précédent majeur sur la reconnaissance faciale et les données biométriques.
+
+### CNIL c/ Criteo — CNIL, 15 juin 2023, SAN-2023-009
+- **Date :** 15 juin 2023
+- **Référence :** CNIL, SAN-2023-009
+- **Résumé :** La CNIL a infligé à Criteo une amende de 40 M€ pour défaut de consentement valide au dépôt de cookies de ciblage publicitaire, insuffisance des informations fournies aux utilisateurs, et non-respect des droits d'accès et d'effacement.
+- **Portée :** Sanction majeure dans le secteur de la publicité programmatique. Renforcement des exigences en matière de preuve du consentement par les acteurs de l'adtech. Confirmation de l'approche stricte de la CNIL sur le ciblage publicitaire.
+
+### CNIL c/ Amazon France Logistique — CNIL, 27 décembre 2023, SAN-2023-021
+- **Date :** 27 décembre 2023
+- **Référence :** CNIL, SAN-2023-021
+- **Résumé :** La CNIL a sanctionné Amazon France Logistique (amende de 32 M€) pour la mise en place d'un système de surveillance excessive des salariés dans ses entrepôts via des scanners mesurant en temps réel l'activité, la productivité et les temps d'inactivité.
+- **Portée :** Application du RGPD au contrôle de l'activité des salariés. Rappel du principe de proportionnalité et de minimisation dans le contexte de la surveillance au travail. Pertinence pour l'encadrement de l'IA managériale.
+
+### CNIL c/ Yahoo — CNIL, 29 décembre 2023
+- **Date :** 29 décembre 2023
+- **Référence :** CNIL, SAN-2023-024
+- **Résumé :** La CNIL a infligé à Yahoo une amende de 10 M€ pour dépôt de cookies publicitaires sur les terminaux des utilisateurs du service Yahoo Mail sans consentement préalable valide, en violation de l'article 82 de la loi Informatique et Libertés.
+- **Portée :** Confirmation de l'exigence de consentement préalable pour les cookies publicitaires. Application de la législation française (art. 82 LIL transposant la directive ePrivacy) aux acteurs internationaux.
+
+### Meta/Facebook — CJUE, 4 juillet 2023, C-252/21 (Meta Platforms c/ Bundeskartellamt)
+- **Date :** 4 juillet 2023
+- **Référence :** CJUE, C-252/21
+- **Résumé :** La CJUE a confirmé qu'une autorité de la concurrence peut, dans le cadre de l'examen d'un abus de position dominante, constater une violation du RGPD. Le Bundeskartellamt avait interdit à Meta de combiner les données des utilisateurs provenant de Facebook, Instagram, WhatsApp et de sites tiers sans consentement.
+- **Portée :** Intersection entre droit de la concurrence et protection des données. Les autorités de concurrence peuvent prendre en compte les violations du RGPD dans l'appréciation d'un abus de position dominante.
+
+## Réformes récentes (2023-2026)
+
+### Digital Services Act (DSA) — Entrée en application (2024)
+- **Dates clés :** Application aux très grandes plateformes (VLOP/VLOSE) depuis le 25 août 2023 ; application générale à tous les intermédiaires depuis le 17 février 2024.
+- **Contenu :** Nouveau cadre de responsabilité des intermédiaires en ligne. Obligations renforcées de modération des contenus, mécanismes de signalement et de recours, transparence algorithmique, audits indépendants pour les très grandes plateformes. Remplacement partiel du régime de la LCEN pour les obligations des hébergeurs.
+- **Transposition en France :** La loi n° 2024-449 du 21 mai 2024 (loi SREN — Sécuriser et réguler l'espace numérique) a désigné l'Arcom comme coordinateur des services numériques français et adapté le droit national.
+
+### Digital Markets Act (DMA) — Entrée en application (2024)
+- **Dates clés :** Entrée en vigueur le 1er novembre 2022 ; obligations applicables aux gatekeepers désignés depuis le 7 mars 2024.
+- **Contenu :** Désignation par la Commission européenne de six contrôleurs d'accès (Alphabet, Amazon, Apple, ByteDance, Meta, Microsoft) en septembre 2023. Obligations d'interopérabilité, de portabilité, d'interdiction d'auto-préférence, de non-combinaison des données sans consentement.
+- **Premières actions :** La Commission européenne a ouvert des enquêtes de non-conformité contre Apple (App Store), Alphabet (Google Search, Google Play) et Meta (« pay or consent ») en 2024.
+
+### AI Act — Règlement européen sur l'intelligence artificielle (2024)
+- **Dates clés :** Adopté le 13 juin 2024, publié au JOUE le 12 juillet 2024. Entrée en vigueur le 1er août 2024. Application échelonnée : interdictions (art. 5) applicables dès février 2025 ; obligations de transparence pour l'IA à usage général (GPAI) dès août 2025 ; obligations pour l'IA à haut risque dès août 2026.
+- **Contenu :** Approche fondée sur les risques : pratiques interdites (manipulation subliminale, scoring social, reconnaissance faciale en temps réel sauf exceptions), obligations renforcées pour les systèmes à haut risque (gestion des risques, qualité des données, transparence, surveillance humaine), obligations de transparence pour les systèmes d'IA à usage général et les deepfakes.
+- **Impact en France :** La France a activement défendu une approche favorable à l'innovation lors des négociations. La CNIL a publié des recommandations sur l'articulation entre RGPD et AI Act. Le bureau français de l'IA, rattaché à la DINUM, coordonne la mise en œuvre nationale.
+
+### Data Act (Règlement UE 2023/2854) — Accès et partage des données (2024-2025)
+- **Dates clés :** Adopté le 13 décembre 2023, publié au JOUE le 22 décembre 2023. Entrée en vigueur le 11 janvier 2024. Application générale à partir du 12 septembre 2025.
+- **Contenu :** Droit des utilisateurs d'accéder aux données générées par l'utilisation de produits connectés (IoT) et de services associés. Obligations de partage de données avec des tiers à la demande de l'utilisateur. Encadrement des clauses contractuelles abusives en matière d'accès aux données. Obligations de portabilité des services cloud. Cadre d'accès aux données du secteur privé par les organismes publics en cas de besoin exceptionnel.
+
+### CNIL — Lignes directrices et actions récentes (2023-2025)
+- **IA et données personnelles :** La CNIL a publié en 2024 une série de fiches pratiques sur l'application du RGPD aux systèmes d'intelligence artificielle, couvrant la base légale, la minimisation, les droits des personnes, et la phase d'entraînement des modèles.
+- **Cookies et traceurs :** La CNIL poursuit activement les contrôles de conformité des bannières cookies (lignes directrices du 1er octobre 2020, mises à jour). Les sanctions de 2023 (Criteo, Yahoo) confirment une politique d'application stricte.
+- **Transferts internationaux :** Après l'adoption du EU-US Data Privacy Framework (décision d'adéquation du 10 juillet 2023), la CNIL a publié des recommandations sur les conditions d'utilisation de ce nouveau cadre, tout en rappelant que celui-ci fait l'objet de recours (NOYB).
+- **Cybersécurité et notifications de violations :** En 2024, la CNIL a traité un nombre record de notifications de violations de données (plus de 5 000). Publication de recommandations renforcées sur les mesures de sécurité et la gestion des incidents.
 
 ## Common Questions & Patterns
 
@@ -102,6 +550,10 @@ Source: Legifrance
 - "Is our data transfer to a non-EU country legal?" → Check if the destination country has an adequacy decision (RGPD Art. 45). If not, use appropriate safeguards: Standard Contractual Clauses (Art. 46) supplemented by a Transfer Impact Assessment (post-Schrems II). Binding Corporate Rules for intra-group transfers (Art. 47). Derogations under Art. 49 are narrow (explicit consent, contractual necessity, vital interests) and not for systematic transfers.
 
 - "How does French law supplement the RGPD?" → Loi Informatique et Libertés (as amended in 2018 and 2019) adapts the RGPD's optional provisions for France: age of digital consent set at 15 (Art. 45 LIL), specific rules for processing by public authorities, and the CNIL's powers and procedures. Art. 1 LIL articulates the founding principle that IT must not harm human identity or individual liberties.
+
+- "What does the DSA change for my platform?" → The DSA replaces the e-Commerce Directive's liability regime and supplements the LCEN. All intermediary services must provide a single point of contact, comply with transparency reporting, and implement notice-and-action mechanisms. Online platforms must additionally provide complaint-handling systems, out-of-court dispute resolution, and ban dark patterns in interfaces. Very large platforms (>45M EU users) must conduct systemic risk assessments, allow researcher data access, and undergo independent audits.
+
+- "Does the AI Act apply to my product?" → Check the risk classification under AI Act Art. 6 and Annex III. Prohibited practices (Art. 5) are banned outright. High-risk systems require conformity assessments, risk management, data governance, transparency, and human oversight. Limited-risk systems (chatbots, deepfakes) have transparency obligations (Art. 52). Minimal-risk systems are unregulated but voluntary codes of conduct are encouraged.
 
 ## Cross-references
 - [europeen.md](./europeen.md) — for EU law primacy and the legal basis of the RGPD as an EU regulation directly applicable in France

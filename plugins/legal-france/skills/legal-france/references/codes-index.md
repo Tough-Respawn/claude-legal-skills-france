@@ -40,6 +40,44 @@ Numbering convention: articles prefixed `L.` are legislative, `R.` are regulator
 
 **Key 2016 reform note:** The law of obligations (art. 1100–1386) was comprehensively reformed by ordonnance n° 2016-131 of 10 February 2016, effective 1 October 2016. Pre-2016 case law may apply different article numbers.
 
+### Hierarchical structure
+
+**Livre préliminaire — De la publication, des effets et de l'application des lois en général (art. 1–6-1)**
+
+**Livre Ier — Des personnes (art. 7–515)**
+- Titre Ier — Des droits civils (art. 7–16-14) : jouissance des droits civils, bioéthique
+- Titre II — Des actes de l'état civil (art. 34–101) : naissance, mariage, décès, registres
+- Titre V — Du mariage (art. 143–228) : conditions, célébration, oppositions
+- Titre VI — Du divorce (art. 229–309) : divorce par consentement mutuel, divorce contentieux, effets
+- Titre VII — De la filiation (art. 310–342-13) : filiation par la loi, action en recherche, PMA
+- Titre VIII — De la filiation adoptive (art. 343–370-6) : adoption plénière et simple
+- Titre IX — De l'autorité parentale (art. 371–387-6) : exercice, droits et devoirs, délégation
+- Titre X — De la minorité et de l'émancipation (art. 388–413) : administration légale
+- Titre XI — De la majorité et des majeurs protégés (art. 414–515) : sauvegarde de justice, curatelle, tutelle, habilitation familiale
+
+**Livre II — Des biens et des différentes modifications de la propriété (art. 516–710)**
+- Titre Ier — De la distinction des biens (art. 516–543) : meubles et immeubles
+- Titre II — De la propriété (art. 544–577) : droit de propriété, accession, bornage
+- Titre III — De l'usufruit, de l'usage et de l'habitation (art. 578–639)
+- Titre IV — Des servitudes ou services fonciers (art. 637–710) : servitudes légales, conventionnelles
+
+**Livre III — Des différentes manières dont on acquiert la propriété (art. 711–2278)**
+- Titre Ier — Des successions (art. 720–892) : dévolution, option, partage, rapport
+- Titre II — Des libéralités (art. 893–1099-1) : donations entre vifs, testaments, réserve héréditaire, quotité disponible
+- Titre III — Des sources d'obligations (art. 1100–1303-4) : contrat, responsabilité extracontractuelle, quasi-contrats
+  - Sous-titre Ier — Le contrat (art. 1101–1231-7) : formation, validité, effets, inexécution
+  - Sous-titre II — La responsabilité extracontractuelle (art. 1240–1244) : fait personnel, fait d'autrui, fait des choses
+  - Sous-titre III — Autres sources (art. 1300–1303-4) : gestion d'affaires, paiement de l'indu, enrichissement injustifié
+- Titre IV — Régime général des obligations (art. 1304–1386) : modalités, opérations, extinction
+- Titre IV bis — Preuve des obligations (art. 1353–1386-1) : charge de la preuve, modes de preuve
+
+**Livre IV — Des sûretés (art. 2284–2488-10)** *(réformé par ordonnance n° 2021-1192 du 15 septembre 2021)*
+- Titre Ier — Dispositions générales (art. 2284–2287) : droit de gage général
+- Titre II — Des sûretés personnelles (art. 2288–2320) : cautionnement, garantie autonome, lettre d'intention
+- Titre III — Des sûretés réelles (art. 2323–2488-10) : privilèges, gage, nantissement, hypothèque, fiducie-sûreté
+
+**Livre V — Dispositions applicables à Mayotte (art. 2489–2534)** : adaptations outre-mer
+
 ---
 
 ## 2. Code pénal
@@ -76,6 +114,48 @@ Numbering convention: articles prefixed `L.` are legislative, `R.` are regulator
 | Art. 441-1 – 441-12 | Forgery (faux) | Document forgery |
 | Art. 450-1 – 450-5 | Criminal conspiracy (association de malfaiteurs) | Organized crime threshold |
 
+### Hierarchical structure
+
+**Partie législative**
+
+**Livre Ier — Dispositions générales (art. 111-1 – 133-17)**
+- Titre Ier — De la loi pénale (art. 111-1 – 113-14)
+  - Chapitre Ier — Des principes généraux (art. 111-1 – 111-5) : légalité des délits et des peines, classification tripartite
+  - Chapitre II — De l'application de la loi pénale dans le temps (art. 112-1 – 112-4) : non-rétroactivité, rétroactivité in mitius
+  - Chapitre III — De l'application de la loi pénale dans l'espace (art. 113-1 – 113-14) : compétence territoriale, personnalité active et passive
+- Titre II — De la responsabilité pénale (art. 121-1 – 122-9)
+  - Chapitre Ier — Dispositions générales (art. 121-1 – 121-7) : responsabilité personnelle, complicité, tentative
+  - Chapitre II — Causes d'irresponsabilité ou d'atténuation (art. 122-1 – 122-9) : trouble mental, légitime défense, état de nécessité, contrainte
+- Titre III — Des peines (art. 131-1 – 133-17)
+  - Chapitre Ier — De la nature des peines (art. 131-1 – 131-44-1) : peines criminelles, correctionnelles, contraventionnelles, complémentaires, alternatives
+  - Chapitre II — Du régime des peines (art. 132-1 – 132-77) : individualisation, récidive, sursis, période de sûreté
+  - Chapitre III — Extinction des peines et effacement des condamnations (art. 133-1 – 133-17) : prescription, amnistie, réhabilitation
+
+**Livre II — Des crimes et délits contre les personnes (art. 211-1 – 227-33)**
+- Titre Ier — Des crimes contre l'humanité et contre l'espèce humaine (art. 211-1 – 215-4) : génocide, crimes contre l'humanité
+- Titre II — Des atteintes à la personne humaine (art. 221-1 – 227-33)
+  - Chapitre Ier — Des atteintes à la vie de la personne (art. 221-1 – 221-11) : meurtre, assassinat, empoisonnement, homicide involontaire
+  - Chapitre II — Des atteintes à l'intégrité physique ou psychique (art. 222-1 – 222-67) : violences, agressions sexuelles, viol, harcèlement
+  - Chapitre III — De la mise en danger de la personne (art. 223-1 – 223-21) : risques causés à autrui, non-assistance
+  - Chapitre V — Des atteintes à la dignité de la personne (art. 225-1 – 225-21) : discriminations, traite des êtres humains, proxénétisme
+
+**Livre III — Des crimes et délits contre les biens (art. 311-1 – 324-9)**
+- Titre Ier — Des appropriations frauduleuses (art. 311-1 – 314-4)
+  - Chapitre Ier — Du vol (art. 311-1 – 311-16)
+  - Chapitre II — De l'extorsion (art. 312-1 – 312-15)
+  - Chapitre III — De l'escroquerie et des infractions voisines (art. 313-1 – 313-9)
+  - Chapitre IV — De l'abus de confiance (art. 314-1 – 314-4)
+- Titre II — Des autres atteintes aux biens (art. 321-1 – 324-9) : recel, blanchiment, destruction et dégradation
+
+**Livre IV — Des crimes et délits contre la nation, l'État et la paix publique (art. 410-1 – 450-5)**
+- Titre Ier — Des atteintes aux intérêts fondamentaux de la nation (art. 410-1 – 414-9) : trahison, espionnage
+- Titre II — Du terrorisme (art. 421-1 – 422-7) : actes de terrorisme, financement
+- Titre III — Des atteintes à l'autorité de l'État (art. 431-1 – 435-15) : attroupements, rébellion, corruption
+- Titre IV — Des atteintes à la confiance publique (art. 441-1 – 445-4) : faux et usage de faux, fausse monnaie
+- Titre V — De la participation à une association de malfaiteurs (art. 450-1 – 450-5)
+
+**Livre V — Des autres crimes et délits (art. 511-1 – 522-2)** : santé publique, protection animale
+
 ---
 
 ## 3. Code du travail
@@ -108,6 +188,48 @@ Numbering convention: articles prefixed `L.` are legislative, `R.` are regulator
 | L. 3211-1 – L. 3253-6 | Wages (rémunération) | SMIC, equal pay, wage protection |
 | L. 4121-1 – L. 4168-2 | Health and safety (santé et sécurité) | Employer obligation de sécurité, risk assessment (DUER) |
 
+### Hierarchical structure
+
+**Partie législative**
+
+**Première partie — Les relations individuelles de travail (L. 1111-1 – L. 1532-1)**
+- Livre Ier — Dispositions préliminaires (L. 1111-1 – L. 1111-3) : champ d'application, seuils d'effectifs
+- Livre II — Le contrat de travail (L. 1221-1 – L. 1273-7)
+  - Titre Ier — Formation du contrat (L. 1221-1 – L. 1221-26) : conclusion, période d'essai
+  - Titre II — Exécution du contrat (L. 1222-1 – L. 1226-23) : modification, suspension, maladie, accident du travail, télétravail
+  - Titre III — Rupture du CDI (L. 1231-1 – L. 1238-5) : licenciement personnel/économique, préavis, indemnités, rupture conventionnelle
+  - Titre IV — CDD (L. 1242-1 – L. 1248-11) : cas de recours, durée, renouvellement, requalification
+  - Titre V — Travail temporaire (L. 1251-1 – L. 1255-19) : intérim, portage salarial
+- Livre III — Le règlement intérieur et le droit disciplinaire (L. 1311-1 – L. 1334-1)
+- Livre IV — La résolution des litiges (L. 1411-1 – L. 1471-1) : conseil de prud'hommes, procédure, conciliation, jugement
+
+**Deuxième partie — Les relations collectives de travail (L. 2111-1 – L. 2632-2)**
+- Livre Ier — Les syndicats professionnels (L. 2111-1 – L. 2146-2) : représentativité, liberté syndicale, délégué syndical
+- Livre II — La négociation collective (L. 2211-1 – L. 2283-2) : conventions et accords collectifs, niveaux de négociation (branche, entreprise), NAO
+- Livre III — Les institutions représentatives du personnel (L. 2311-1 – L. 2317-2)
+  - Titre Ier — Le comité social et économique — CSE (L. 2311-1 – L. 2315-119) : mise en place, attributions, fonctionnement, consultations obligatoires
+
+**Troisième partie — Durée du travail, repos, congés (L. 3111-1 – L. 3431-1)**
+- Livre Ier — Durée du travail (L. 3111-1 – L. 3172-2)
+  - Titre II — Durée du travail et aménagement (L. 3121-1 – L. 3128-3) : 35 heures, heures supplémentaires, forfait jours
+  - Titre III — Repos et jours fériés (L. 3131-1 – L. 3164-2) : repos quotidien (11h), hebdomadaire (35h)
+- Livre II — Congés (L. 3141-1 – L. 3171-4) : congés payés (5 semaines), congés familiaux, congé sabbatique
+
+**Quatrième partie — Santé et sécurité au travail (L. 4111-1 – L. 4831-1)**
+- Livre Ier — Dispositions générales (L. 4111-1 – L. 4163-22) : obligation de sécurité (L. 4121-1), principes de prévention, DUERP
+- Livre II — Les lieux de travail (L. 4211-1 – L. 4234-2) : aération, éclairage
+- Livre IV — Prévention de certains risques (L. 4411-1 – L. 4451-2) : agents chimiques, amiante
+
+**Cinquième partie — L'emploi (L. 5111-1 – L. 5553-1)**
+- Livre Ier — Dispositifs en faveur de l'emploi (L. 5111-1 – L. 5151-12) : activité partielle
+- Livre IV — Le demandeur d'emploi (L. 5411-1 – L. 5429-3) : inscription, indemnisation (France Travail)
+
+**Sixième partie — La formation professionnelle tout au long de la vie (L. 6111-1 – L. 6523-7)** : CPF, apprentissage, VAE
+
+**Septième partie — Dispositions particulières à certaines professions (L. 7111-1 – L. 7521-1)** : journalistes, VRP, plateformes numériques
+
+**Huitième partie — Contrôle de l'application de la législation du travail (L. 8111-1 – L. 8331-1)** : inspection du travail, travail dissimulé
+
 ---
 
 ## 4. Code de commerce
@@ -135,6 +257,54 @@ Numbering convention: articles prefixed `L.` are legislative, `R.` are regulator
 | L. 420-1 – L. 420-7 | Competition law: anti-competitive practices | Cartels, abuse of dominant position |
 | L. 441-1 – L. 441-16 | Commercial relations: transparency and balance | Payment terms, general terms of sale (CGV), late payment penalties |
 | L. 620-1 – L. 698-1 | Collective insolvency proceedings | Sauvegarde, redressement judiciaire, liquidation judiciaire |
+
+### Hierarchical structure
+
+**Partie législative**
+
+**Livre Ier — Du commerce en général (L. 110-1 – L. 190-1)**
+- Titre Ier — Des actes de commerce (L. 110-1 – L. 110-4) : définition, preuve, prescription commerciale
+- Titre II — Des commerçants (L. 121-1 – L. 128-6) : qualité de commerçant, obligations comptables, conjoint collaborateur
+- Titre III — Des courtiers, commissionnaires et agents commerciaux (L. 131-1 – L. 134-17)
+- Titre IV — Du fonds de commerce (L. 141-1 – L. 146-4) : vente, nantissement, location-gérance, bail commercial
+
+**Livre II — Des sociétés commerciales et des groupements d'intérêt économique (L. 210-1 – L. 252-13)**
+- Titre Ier — Dispositions préliminaires (L. 210-1 – L. 210-12) : personnalité morale, immatriculation
+- Titre II — Dispositions particulières aux sociétés
+  - Chapitre Ier — Des SNC (L. 221-1 – L. 221-17) : responsabilité indéfinie et solidaire des associés
+  - Chapitre II — Des sociétés en commandite simple (L. 222-1 – L. 222-12)
+  - Chapitre III — Des SARL (L. 223-1 – L. 223-43) : constitution, gérance, assemblées, parts sociales, EURL
+  - Chapitre IV — Des SA (L. 225-1 – L. 225-270) : CA ou directoire/CS, assemblées générales, commissaires aux comptes
+  - Chapitre V — Des SAS (L. 227-1 – L. 227-20) : liberté statutaire, président, clause d'agrément
+  - Chapitre VI — Des SCA (L. 226-1 – L. 226-14)
+- Titre III — Dispositions communes (L. 228-1 – L. 238-6)
+  - Chapitre Ier — Valeurs mobilières (L. 228-1 – L. 228-106) : actions, obligations
+  - Chapitre II — Comptes sociaux (L. 232-1 – L. 232-25) : approbation, dividendes
+  - Chapitre III — Filiales, participations et contrôle (L. 233-1 – L. 233-43) : seuils de notification
+  - Chapitre IV — Procédure d'alerte (L. 234-1 – L. 234-9)
+  - Chapitre VII — Dissolution et liquidation (L. 237-1 – L. 237-31)
+- Titre V — Des GIE et GEIE (L. 251-1 – L. 252-13)
+
+**Livre III — De certaines formes de ventes et des clauses d'exclusivité (L. 310-1 – L. 330-3)** : liquidations, franchise, distribution sélective
+
+**Livre IV — De la liberté des prix et de la concurrence (L. 410-1 – L. 470-8)**
+- Titre Ier — De la liberté des prix (L. 410-1 – L. 410-7)
+- Titre II — Des pratiques anticoncurrentielles (L. 420-1 – L. 420-7) : ententes, abus de position dominante, Autorité de la concurrence
+- Titre III — De la concentration économique (L. 430-1 – L. 430-10) : contrôle des concentrations
+- Titre IV — De la transparence et des pratiques commerciales (L. 441-1 – L. 443-8) : CGV, délais de paiement, pratiques restrictives de concurrence, déséquilibre significatif (L. 442-1)
+
+**Livre V — Des effets de commerce et des garanties (L. 511-1 – L. 527-10)** : lettre de change, billet à ordre, warrant
+
+**Livre VI — Des difficultés des entreprises (L. 610-1 – L. 696-1)**
+- Titre Ier — Prévention (L. 611-1 – L. 612-4) : mandat ad hoc, conciliation
+- Titre II — Sauvegarde (L. 620-1 – L. 628-7) : période d'observation, plan de sauvegarde, comités de créanciers
+- Titre III — Redressement judiciaire (L. 631-1 – L. 632-4) : cessation des paiements, plan de redressement
+- Titre IV — Liquidation judiciaire (L. 640-1 – L. 644-6) : réalisation de l'actif, clôture
+- Titre V — Responsabilité et sanctions (L. 651-1 – L. 655-2) : comblement de passif, faillite personnelle, banqueroute
+
+**Livre VII — Des juridictions commerciales (L. 710-1 – L. 743-13)** : tribunal de commerce, compétence, procédure
+
+**Livre VIII — De quelques professions réglementées (L. 811-1 – L. 822-19)** : administrateurs judiciaires, mandataires judiciaires, commissaires aux comptes
 
 ---
 
@@ -208,6 +378,56 @@ Numbering convention: articles prefixed `L.` are legislative, `R.` are regulator
 - Recours de plein contentieux (pleine juridiction): all remedies including damages
 - Référé-suspension: interim suspension of an act
 - Référé-liberté: emergency protection of fundamental freedoms (48-hour decision)
+
+### Hierarchical structure
+
+**Partie législative**
+
+**Livre Ier — Le Conseil d'État (L. 111-1 – L. 136-1)**
+- Titre Ier — Attributions contentieuses (L. 111-1 – L. 114-1) : compétence en premier et dernier ressort, cassation, avis contentieux
+- Titre II — Attributions consultatives (L. 112-1 – L. 112-7) : consultation obligatoire sur les projets de loi et ordonnances
+- Titre III — Organisation et fonctionnement (L. 121-1 – L. 136-1) : sections, formations de jugement
+
+**Livre II — Les tribunaux administratifs et les cours administratives d'appel (L. 211-1 – L. 236-1)**
+- Titre Ier — Les tribunaux administratifs (L. 211-1 – L. 215-3)
+  - Chapitre Ier — Compétence (L. 211-1 – L. 211-2) : juridiction de droit commun du contentieux administratif en premier ressort
+  - Chapitre II — Organisation et fonctionnement (L. 212-1 – L. 212-6) : formations de jugement, juge unique, audience, rapporteur public
+- Titre II — Les cours administratives d'appel (L. 221-1 – L. 224-1)
+  - Chapitre Ier — Compétence (L. 221-1 – L. 221-7) : appel des jugements des tribunaux administratifs
+  - Chapitre II — Organisation et fonctionnement (L. 222-1 – L. 222-6) : chambres, audience, rapporteur public
+- Titre III — Dispositions statutaires (L. 231-1 – L. 236-1) : corps des magistrats administratifs, recrutement, indépendance
+
+**Livre III — Les compétences juridictionnelles (L. 311-1 – L. 315-1)**
+- Titre Ier — Premier ressort du Conseil d'État (L. 311-1 – L. 311-12) : actes réglementaires ministériels
+- Titre II — Appel devant le Conseil d'État (L. 321-1 – L. 321-2) : élections municipales et cantonales
+- Titre III — Premier ressort des CAA (L. 331-1) : contentieux CNDA
+
+**Livre IV — L'introduction de l'instance (L. 411-1 – L. 412-1)**
+- Chapitre Ier — La requête introductive d'instance (L. 411-1 – L. 411-7) : forme écrite, mémoire complémentaire
+- Chapitre II — Le ministère d'avocat (L. 412-1) : dispense devant le tribunal administratif en matière d'excès de pouvoir
+
+**Livre V — Le référé (L. 511-1 – L. 555-2)**
+- Titre Ier — Le juge des référés (L. 511-1 – L. 511-2) : juge unique, pouvoirs
+- Titre II — Les référés d'urgence (L. 521-1 – L. 523-1)
+  - Chapitre Ier — Référé-suspension (L. 521-1) : urgence + doute sérieux sur la légalité
+  - Chapitre II — Référé-liberté (L. 521-2) : atteinte grave et manifestement illégale à une liberté fondamentale, décision en 48 heures
+  - Chapitre III — Référé conservatoire (L. 521-3) : mesures utiles, absence de contestation sérieuse
+- Titre III — Les référés ordinaires (L. 531-1 – L. 532-1) : référé-provision (L. 531-1), référé-constat (L. 531-1), référé-instruction (L. 532-1)
+- Titre IV — Référé en matière de contrats et marchés (L. 551-1 – L. 551-24) : référé précontractuel, contractuel
+
+**Livre VI — Les dispositions relatives à certains contentieux particuliers (L. 600-1 – L. 600-9)**
+- Urbanisme : conditions de recevabilité renforcées, cristallisation des moyens, régularisation
+
+**Livre VII — Le jugement (L. 741-1 – L. 774-13)**
+- Titre Ier — Forme et contenu du jugement (L. 741-1 – L. 741-3) : visas, motifs, dispositif
+- Titre II — L'exécution des décisions (L. 751-1 – L. 751-4) : injonction, astreinte
+- Titre III — Les voies de recours (L. 761-1 – L. 774-13) : appel, cassation, tierce opposition, recours en révision
+
+**Partie réglementaire** — structure miroir de la partie législative. Articles clés :
+- R. 411-1 – R. 412-1 : recevabilité de la requête (signature, conclusions, moyens)
+- R. 421-1 – R. 421-7 : délai de 2 mois, prorogation par recours administratif préalable
+- R. 431-1 – R. 432-1 : représentation obligatoire par avocat aux Conseils
+- R. 741-1 – R. 741-9 : exigences formelles du jugement
 
 ---
 
