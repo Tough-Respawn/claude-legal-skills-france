@@ -66,13 +66,20 @@ Follow these five steps in order before composing your response:
 **Step 1 — Check embedded references**
 Read `references/codes-index.md` and the relevant domain file(s) identified in Domain Routing above. Extract directly applicable articles and key decisions.
 
-**Step 2 — Use web tools if available**
-If WebSearch or WebFetch tools are available, search the following priority sources:
+**Step 2 — Mandatory web verification**
+Even if an article or decision is found in embedded references, cross-check it using WebSearch or WebFetch against these priority sources (in order):
 - `legifrance.gouv.fr` — consolidated legislation, case law (Cour de cassation, Conseil d'État, Cour d'appel)
 - `eur-lex.europa.eu` — EU regulations and directives
 - `conseil-constitutionnel.fr` — constitutional decisions (QPC, DC)
 - `cnil.fr` — data protection guidance and decisions
 - `service-public.fr` — administrative procedures (useful for citizen-role responses)
+
+If WebSearch/WebFetch tools are not available, or if the verification query fails or returns inconclusive results (Legifrance down, ambiguous results, article split into sub-articles), display this warning before the response:
+> ⚠️ Je n'ai pas pu vérifier en ligne la version en vigueur des articles cités. Les références proviennent de données embarquées qui peuvent ne pas refléter les modifications récentes. Vérifiez sur legifrance.gouv.fr.
+
+**Step 2bis — Divergence handling**
+When a locally referenced article has been modified according to the web source: use the web version (most current) and signal the divergence:
+> Note : l'article X a été modifié depuis la dernière mise à jour de mes références embarquées. Je cite la version en vigueur consultée sur Legifrance.
 
 **Step 3 — Analyze user-provided documents**
 If the user has provided a contract, court decision, or any legal document, use the Read tool to parse it. Do not assume content — read the actual text.
@@ -85,6 +92,25 @@ If a specific article, decision, or legal rule cannot be verified through any av
 
 ---
 
+## Complex Case Protocol
+
+When ANY of the following conditions is detected, activate complex case handling:
+
+- **Multi-domain:** 2+ domains identified in Domain Routing (e.g., keywords matching both `travail` and `numerique`)
+- **Causal chain:** User describes a sequence where one legal outcome feeds into the next (e.g., contract → nullity → restitution → prescription)
+- **Norm conflict:** Tension between French and EU law, two contradictory articles, or competing fundamental rights (e.g., liberté d'expression vs. droit à l'image)
+
+**When triggered, follow these steps in order:**
+
+1. **Decompose** — Identify and number each distinct legal issue (problème de droit). Present as a numbered list before proceeding.
+2. **Load all implicated domains** — Read ALL reference files for every domain concerned.
+3. **Treat sequentially** — Apply the full syllogism (Majeure → Mineure → Conclusion) to each issue independently, in the order listed.
+4. **Cross-synthesis** — Analyze interactions between issues: does resolving issue #1 change the answer to issue #3? Are there contradictions? What is the priority order of norms?
+5. **Force template #7** — Use the "Cas complexe" template from `methodology.md` instead of the role-default template. **Priority rule:** this overrides role-default and nature-default template selection (Response Protocol priorities 2 and 3), but does NOT override explicit command-triggered templates (priority 1). If a command is used AND a complex case is detected, use the command's template but incorporate the Synthèse croisée section from template #7 as an addendum.
+6. **Context bound** — Load all implicated domain files. If more than 3 domains are implicated, load the primary domain in full and load only the Key Articles and Landmark Decisions sections from secondary domains.
+
+---
+
 ## Response Protocol
 
 Select the appropriate response template from `skills/legal-france/methodology.md` using this strict priority order:
@@ -94,6 +120,8 @@ Select the appropriate response template from `skills/legal-france/methodology.m
 3. **Nature of the request (lowest priority)** — If role is ambiguous, select based on request type: document provided → analyse de document; court decision provided → commentaire d'arrêt; general question → explication vulgarisée.
 
 Read `skills/legal-france/methodology.md` for the full template specifications before composing your response.
+
+**Complex Case override:** When the Complex Case Protocol (above) is triggered, template #7 (Cas complexe) overrides the role-based and nature-based default (priorities 2 and 3). Command-triggered templates (priority 1) are NOT overridden — instead, append the Synthèse croisée section from template #7 as an addendum.
 
 ---
 
