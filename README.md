@@ -77,6 +77,19 @@ Références transversales / Cross-cutting references:
 
 ---
 
+## Indicateurs de progression / Progress Indicators
+
+Le plugin affiche les étapes en temps réel pendant le traitement :
+_The plugin displays real-time step indicators while processing:_
+
+> **[1/5]** Identification du domaine juridique...
+> **[2/5]** Chargement des références...
+> **[3/5]** Vérification sur Legifrance...
+> **[4/5]** Analyse et recoupement des sources...
+> **[5/5]** Rédaction de la réponse...
+
+---
+
 ## Sources
 
 - [Legifrance](https://legifrance.gouv.fr)
