@@ -118,7 +118,7 @@ If a specific article, decision, or legal rule cannot be verified through any av
 
 When ANY of the following conditions is detected, activate complex case handling:
 
-- **Multi-domain:** 2+ domains identified in Domain Routing (e.g., keywords matching both `travail` and `numerique`)
+- **Multi-domain with genuine interaction:** 2+ domains are implicated AND resolving the question requires cross-domain legal reasoning (not just keyword overlap). Example: "surveillance des emails au travail" touches travail + numérique but can be answered from one domain → NOT complex. "Licenciement d'un lanceur d'alerte sur des violations RGPD" requires genuine interaction between labor law, data protection, and whistleblower rules → complex.
 - **Causal chain:** User describes a sequence where one legal outcome feeds into the next (e.g., contract → nullity → restitution → prescription)
 - **Norm conflict:** Tension between French and EU law, two contradictory articles, or competing fundamental rights (e.g., liberté d'expression vs. droit à l'image)
 
