@@ -80,22 +80,24 @@ _7 structured templates aligned with French legal methodology:_
 
 ## Domaines couverts / Domains Covered
 
-| Domaine | Domain | Fichier de référence |
-|---------|--------|---------------------|
-| Droit civil | Civil law | `references/civil.md` |
-| Droit pénal | Criminal law | `references/penal.md` |
-| Droit du travail | Labor law | `references/travail.md` |
-| Droit des affaires | Business law | `references/affaires.md` |
-| Droit administratif | Administrative law | `references/administratif.md` |
-| Droit numérique | Digital law (GDPR) | `references/numerique.md` |
-| Droit européen | EU law | `references/europeen.md` |
-| Procédure | Procedural law | `references/procedure.md` |
+| Domaine | Domain | Skill auto-déclenchant | Fichier de référence |
+|---------|--------|------------------------|----------------------|
+| Droit civil | Civil law | `legal-france-civil` | `skills/legal-france-civil/references/civil.md` |
+| Droit pénal | Criminal law | `legal-france-penal` | `skills/legal-france-penal/references/penal.md` |
+| Droit du travail | Labor law | `legal-france-travail` | `skills/legal-france-travail/references/travail.md` |
+| Droit des affaires | Business law | `legal-france-affaires` | `skills/legal-france-affaires/references/affaires.md` |
+| Droit administratif | Administrative law | `legal-france-administratif` | `skills/legal-france-administratif/references/administratif.md` |
+| Droit numérique | Digital law (GDPR) | `legal-france-numerique` | `skills/legal-france-numerique/references/numerique.md` |
+| Droit européen | EU law | `legal-france-europeen` | `skills/legal-france-europeen/references/europeen.md` |
+| Procédure | Procedural law | `legal-france` (meta) | `skills/legal-france/references/procedure.md` |
 
-Références transversales / Cross-cutting references:
-- `references/jurisprudence-cle.md` — 96 décisions clés / 96 landmark decisions
-- `references/glossaire.md` — ~170 termes / ~170 terms
-- `references/codes-index.md` — Index des codes français / Index of French legal codes
-- `references/sources.md` — Sources officielles / Official sources
+Références transversales / Cross-cutting references (méta skill `legal-france`) :
+- `skills/legal-france/references/jurisprudence-cle.md` — 96 décisions clés / 96 landmark decisions
+- `skills/legal-france/references/glossaire.md` — ~170 termes / ~170 terms
+- `skills/legal-france/references/codes-index.md` — Index des codes français / Index of French legal codes
+- `skills/legal-france/references/sources.md` — Sources officielles / Official sources
+
+Tous les chemins sont relatifs à `plugins/legal-france/`.
 
 ---
 
@@ -166,9 +168,13 @@ Invoquez `/jurisprudence harcèlement moral` : la réponse doit citer les pourvo
 
 ## Contribuer / Contributing
 
-Pour enrichir les références, ajoutez articles ou décisions dans le fichier correspondant sous `plugins/legal-france/skills/legal-france/references/<domaine>.md` en suivant le format existant.
+Pour enrichir les références :
+- **Référence d'un domaine spécifique** : ajoutez dans `plugins/legal-france/skills/legal-france-<domaine>/references/<domaine>.md` (par exemple `legal-france-travail/references/travail.md`).
+- **Référence transversale** (procédure, jurisprudence clé, glossaire, codes-index, sources) : ajoutez dans `plugins/legal-france/skills/legal-france/references/<fichier>.md`.
 
-_To enrich references, add statutes or decisions to the relevant file under `plugins/legal-france/skills/legal-france/references/<domain>.md`, following the existing format._
+_To enrich references:_
+- _Domain-specific: add to `plugins/legal-france/skills/legal-france-<domain>/references/<domain>.md`._
+- _Cross-cutting (procedure, key case law, glossary, codes-index, sources): add to `plugins/legal-france/skills/legal-france/references/<file>.md`._
 
 ---
 
