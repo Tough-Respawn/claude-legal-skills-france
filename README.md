@@ -134,21 +134,57 @@ _The plugin displays real-time step indicators while processing:_
 1. Créer un compte sur [piste.gouv.fr](https://piste.gouv.fr) (la plateforme API de l'État).
 2. Dans le catalogue, souscrire à l'API **Judilibre — Cour de cassation**.
 3. Créer une application (générer une paire `client_id` / `client_secret`).
-4. Définir deux variables d'environnement :
+4. Définir deux variables d'environnement. **Choisissez l'option qui correspond à votre setup** — une seule des trois suffit :
+
+   #### Option A — Settings Claude Code (recommandée, persiste, marche partout)
+
+   Ouvrez `~/.claude/settings.json` (Linux/macOS) ou `%USERPROFILE%\.claude\settings.json` (Windows) et ajoutez le bloc `env` :
+
+   ```json
+   {
+     "env": {
+       "PISTE_CLIENT_ID": "votre_client_id",
+       "PISTE_CLIENT_SECRET": "votre_client_secret"
+     }
+   }
+   ```
+
+   Si le fichier contient déjà d'autres clés, fusionnez le bloc `env` avec l'existant. Pas besoin de relancer le terminal — relancez juste la session Claude Code.
+
+   #### Option B — Variables d'environnement système (persistent globalement)
+
+   **Linux / macOS** — ajoutez à la fin de `~/.bashrc`, `~/.zshrc` ou `~/.profile` :
+   ```bash
+   export PISTE_CLIENT_ID="votre_client_id"
+   export PISTE_CLIENT_SECRET="votre_client_secret"
+   ```
+   Puis `source ~/.bashrc` (ou rouvrez votre terminal).
+
+   **Windows** — méthode graphique :
+   1. Touche Windows → tapez "variables d'environnement" → ouvrir.
+   2. Cliquez "Variables d'environnement" → section "Variables utilisateur" → "Nouveau".
+   3. Créez `PISTE_CLIENT_ID` et `PISTE_CLIENT_SECRET` avec vos valeurs.
+   4. Rouvrez Claude Code (les variables sont lues au démarrage).
+
+   #### Option C — Session shell uniquement (temporaire, à refaire à chaque ouverture)
 
    **Linux / macOS :**
    ```bash
    export PISTE_CLIENT_ID="votre_client_id"
    export PISTE_CLIENT_SECRET="votre_client_secret"
+   claude  # lancez Claude Code depuis ce shell
    ```
 
    **Windows PowerShell :**
    ```powershell
    $env:PISTE_CLIENT_ID = "votre_client_id"
    $env:PISTE_CLIENT_SECRET = "votre_client_secret"
+   claude
    ```
 
-5. Relancer votre session Claude Code. Le plugin détecte automatiquement la présence des variables et utilise Judilibre en priorité.
+5. Vérifiez que Claude Code voit les variables : invoquez `/jurisprudence test`. Si le footer mentionne *"configurez l'API Judilibre"*, c'est qu'elles ne sont pas détectées — vérifiez le fichier ou la méthode utilisée.
+
+> **Sécurité** : ne commitez jamais vos credentials PISTE dans un repo Git. Le `.gitignore` du projet exclut déjà `.claude/` pour cette raison. Si vous suspectez une fuite, révoquez l'application sur piste.gouv.fr et régénérez les clés.
 
 ### Vérification / Verification
 
