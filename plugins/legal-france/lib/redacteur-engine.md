@@ -95,6 +95,29 @@ and signal it to the user before generating.
 
 Replace `{{field_name}}` placeholders with collected values. Resolve
 `{{#if …}}` conditionals based on whether the optional field was filled.
+
+A template body may use placeholders that are not declared in the
+frontmatter `required_fields` / `optional_fields`. Three categories of
+such placeholders exist; handle them as follows:
+
+- **Auto-derived from context** (`{{date_du_jour}}`, `{{ville_expediteur}}`,
+  `{{ville_locataire}}`, `{{ville_salarie}}`, `{{ville_contrevenant}}`,
+  `{{ville_requerant}}`, `{{ville_plaignant}}`, `{{ville_signature}}`,
+  `{{date_signature}}`) — derive from the current date or from the city
+  part of an address already collected. No new question needed.
+- **Derived from another collected field** (`{{duree_preavis}}`,
+  `{{date_debut_preavis}}`, `{{date_fin_preavis}}`, `{{delai_legal}}`,
+  `{{tribunal_competent_ville}}`, `{{tribunal_adresse}}`,
+  `{{adresse_omp_indique_sur_avis}}`, `{{titre_autorite}}`,
+  `{{situation_vehicule}}`) — compute from the user's earlier answers,
+  the convention collective indicated, or from the document the user
+  is contesting/responding to. Confirm the computed value with the user
+  before insertion.
+- **Free-text follow-ups** (`{{employeur_signataire_nom}}`,
+  `{{employeur_signataire_fonction}}`, `{{recherche_reclassement_detail}}`,
+  `{{justification_locataire}}`) — ask one short follow-up question for
+  each, in the natural flow after the related questionnaire item.
+
 Output the final document inside a Markdown code block prefixed and
 suffixed by a line of dashes for visual separation:
 
