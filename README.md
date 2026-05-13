@@ -129,50 +129,101 @@ _The plugin displays real-time step indicators while processing:_
 > **FR :** Pour des recherches jurisprudentielles structurées via l'API officielle de la Cour de cassation. Gratuit. Sans cette config, le plugin retombe automatiquement sur les recherches web Legifrance.
 > **EN:** For structured case-law search via the official Cour de cassation API. Free of charge. Without this setup, the plugin transparently falls back to Legifrance web search.
 
-### Étapes / Steps
+### Étapes détaillées / Detailed steps
 
-1. Créer un compte sur [piste.gouv.fr](https://piste.gouv.fr) (la plateforme API de l'État).
-2. Dans le catalogue, souscrire à l'API **Judilibre — Cour de cassation**.
-3. Créer une application (générer une paire `client_id` / `client_secret`).
-4. Définir deux variables d'environnement. **Choisissez l'option qui correspond à votre setup** — une seule des deux suffit :
+#### Étape 1 — Créer un compte PISTE
 
-   #### Option A — Settings Claude Code (recommandée, persiste, marche partout)
+Allez sur [piste.gouv.fr](https://piste.gouv.fr) → bouton **"Créer un compte"** (en haut à droite). Remplissez le formulaire (email, mot de passe, acceptez les CGU, captcha). Validez par email.
 
-   Ouvrez `~/.claude/settings.json` (Linux/macOS) ou `%USERPROFILE%\.claude\settings.json` (Windows) et ajoutez le bloc `env` :
+#### Étape 2 — Créer une application **de PRODUCTION** (point critique)
 
-   ```json
-   {
-     "env": {
-       "PISTE_CLIENT_ID": "votre_client_id",
-       "PISTE_CLIENT_SECRET": "votre_client_secret"
-     }
-   }
-   ```
+> **Important** : à l'inscription, PISTE crée automatiquement une application **Sandbox** nommée `APP_SANDBOX_<votre-email>`. **Ne l'utilisez pas pour le plugin** — les credentials Sandbox utilisent une URL différente (`sandbox-oauth.piste.gouv.fr`) alors que le plugin appelle l'URL Production (`oauth.piste.gouv.fr`).
+>
+> Vous **devez créer une application de Production manuellement**.
 
-   Si le fichier contient déjà d'autres clés, fusionnez le bloc `env` avec l'existant. Pas besoin de relancer le terminal — relancez juste la session Claude Code.
+1. Connecté à PISTE → menu **APPLICATIONS** → bouton **"Créer une application"**.
+2. Renseignez :
+   - **Nom de l'application** : unique, sans caractères spéciaux autres que `-` ou `_` (ex : `claude-legal-france`).
+   - **Description**, **Email**, **Information sur la structure**, **Responsable d'application** (obligatoires).
+   - Laissez **Activer l'application** coché.
+3. Cliquez **"Sauvegarder l'application"**.
 
-   #### Option B — Variables d'environnement système (persistent globalement, utile si vous utilisez les creds avec d'autres outils)
+#### Étape 3 — Raccorder l'API Judilibre à votre application
 
-   **Linux / macOS** — ajoutez à la fin de `~/.bashrc`, `~/.zshrc` ou `~/.profile` :
-   ```bash
-   export PISTE_CLIENT_ID="votre_client_id"
-   export PISTE_CLIENT_SECRET="votre_client_secret"
-   ```
-   Puis `source ~/.bashrc` (ou rouvrez votre terminal).
+1. Sur la fiche de votre nouvelle application, cliquez **"Modifier l'application"**.
+2. Validez les CGU de l'API Judilibre via le lien **"Cliquez ici pour accéder à la page de consentement"** (rubrique "Consentement CGU API").
+3. De retour sur la modification de l'application, cochez **Judilibre — Cour de cassation** dans le tableau "Sélectionner les API".
+4. Cliquez **"Appliquer les modifications"**.
 
-   **Windows** — méthode graphique :
-   1. Touche Windows → tapez "variables d'environnement" → ouvrir.
-   2. Cliquez "Variables d'environnement" → section "Variables utilisateur" → "Nouveau".
-   3. Créez `PISTE_CLIENT_ID` et `PISTE_CLIENT_SECRET` avec vos valeurs.
-   4. Rouvrez Claude Code (les variables sont lues au démarrage).
+L'approbation est généralement automatique pour Judilibre (vérifiez que la case "Souscrite" devient grisée et cochée).
 
-5. Vérifiez que Claude Code voit les variables : invoquez `/jurisprudence test`. Si le footer mentionne *"configurez l'API Judilibre"*, c'est qu'elles ne sont pas détectées — vérifiez le fichier ou la méthode utilisée.
+#### Étape 4 — Générer les identifiants Oauth (vos VRAIES clés)
 
-> **Sécurité** : ne commitez jamais vos credentials PISTE dans un repo Git. Le `.gitignore` du projet exclut déjà `.claude/` pour cette raison. Si vous suspectez une fuite, révoquez l'application sur piste.gouv.fr et régénérez les clés.
+> **Deux types d'identifiants existent dans l'onglet Authentification — utilisez le bon :**
+> - **API Keys** — ce n'est PAS ce qu'utilise le plugin (méthode d'auth différente).
+> - **Identifiants Oauth** — c'est ce qu'il faut.
 
-### Vérification / Verification
+1. Sur la fiche de votre application → onglet **"Authentification"**.
+2. Section **"Identifiants Oauth"** → bouton **"Générer"**.
+3. Dans la popup :
+   - **Type d'application** : `Confidentiel` (sélectionné par défaut)
+   - **URL de rappel** : laisser **vide** (pas nécessaire pour le flux Client Credentials utilisé par le plugin)
+   - **Certificat X.509** : laisser **vide**
+4. Cliquez **"Générer un identifiant"**.
 
-Invoquez `/jurisprudence harcèlement moral` : la réponse doit citer les pourvois avec format `Cass. soc., date, n° pourvoi (Judilibre: id)`. Si la citation n'a pas l'identifiant Judilibre, c'est que le fallback Legifrance a été utilisé.
+Vous voyez maintenant dans la section "Identifiants Oauth" :
+- **Client ID** (long identifiant alphanumérique) → c'est votre `PISTE_CLIENT_ID`.
+- **Secret key** masqué → cliquez **"Consulter le client secret"** → bouton **"Copy"** pour copier le secret → c'est votre `PISTE_CLIENT_SECRET`.
+
+> **Conservez le secret immédiatement** dans un gestionnaire de mots de passe. Vous pouvez le re-consulter à tout moment, mais PISTE recommande de le **régénérer tous les 3 mois** (action "Modifier" → "Régénérer" sur l'identifiant).
+
+#### Étape 5 — Définir deux variables d'environnement
+
+**Choisissez l'option qui correspond à votre setup** — une seule des deux suffit :
+
+##### Option A — Settings Claude Code (recommandée, persiste, marche partout)
+
+Ouvrez `~/.claude/settings.json` (Linux/macOS) ou `%USERPROFILE%\.claude\settings.json` (Windows) et ajoutez le bloc `env` :
+
+```json
+{
+  "env": {
+    "PISTE_CLIENT_ID": "votre_client_id",
+    "PISTE_CLIENT_SECRET": "votre_client_secret"
+  }
+}
+```
+
+Si le fichier contient déjà d'autres clés, fusionnez le bloc `env` avec l'existant. Pas besoin de relancer le terminal — relancez juste la session Claude Code.
+
+##### Option B — Variables d'environnement système (persistent globalement, utile si vous utilisez les creds avec d'autres outils)
+
+**Linux / macOS** — ajoutez à la fin de `~/.bashrc`, `~/.zshrc` ou `~/.profile` :
+```bash
+export PISTE_CLIENT_ID="votre_client_id"
+export PISTE_CLIENT_SECRET="votre_client_secret"
+```
+Puis `source ~/.bashrc` (ou rouvrez votre terminal).
+
+**Windows** — méthode graphique :
+1. Touche Windows → tapez "variables d'environnement" → ouvrir.
+2. Cliquez "Variables d'environnement" → section "Variables utilisateur" → "Nouveau".
+3. Créez `PISTE_CLIENT_ID` et `PISTE_CLIENT_SECRET` avec vos valeurs.
+4. Rouvrez Claude Code (les variables sont lues au démarrage).
+
+#### Étape 6 — Vérifier que tout marche
+
+Invoquez `/jurisprudence harcèlement moral`. Trois cas possibles :
+
+- **[OK] Citation au format `Cass. soc., date, n° pourvoi (Judilibre: id)`** → tout fonctionne, Judilibre répond.
+- **[FALLBACK] Citation sans l'identifiant `(Judilibre: ...)` et footer mentionnant *"configurez l'API Judilibre"*** → les variables d'environnement ne sont pas détectées par Claude Code. Vérifiez votre fichier de config et relancez la session.
+- **[ERREUR AUTH] Footer mentionnant une erreur d'authentification PISTE** → soit les identifiants sont incorrects, soit vous avez utilisé l'app **Sandbox** au lieu de Production. Régénérez une paire `Identifiants Oauth` dans votre **application de Production**.
+
+### Quotas et bonnes pratiques
+
+- **Quota par défaut en Production** : 20 requêtes / seconde. Largement suffisant pour un usage perso ou petite équipe. Au-delà, HTTP 429 et le plugin retombe sur le WebSearch Legifrance pour la requête en cours.
+- **Sécurité** : ne commitez jamais vos credentials PISTE dans un repo Git. Le `.gitignore` du projet exclut déjà `.claude/` pour cette raison. Si vous suspectez une fuite, "Modifier" → "Régénérer" sur l'identifiant Oauth dans PISTE.
+- **Rotation** : PISTE recommande de régénérer le `client_secret` tous les 3 mois.
 
 ---
 
