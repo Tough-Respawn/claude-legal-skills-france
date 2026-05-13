@@ -1,7 +1,7 @@
 # legal-france — Plugin Claude Code pour le droit français / French Law Plugin for Claude Code
 
-> **FR :** Assistant juridique français pour Claude Code — 7 domaines, références embarquées, adapté à votre profil.
-> **EN:** French law assistant for Claude Code — 7 domains, embedded references, adapts to your profile.
+> **FR :** Assistant juridique français pour Claude Code — 8 skills modulaires auto-déclenchants, 10 modèles de documents juridiques, intégration jurisprudence Cour de cassation (Judilibre).
+> **EN:** French law assistant for Claude Code — 8 modular auto-triggering skills, 10 legal document templates, Cour de cassation case-law integration (Judilibre).
 
 ---
 
@@ -26,6 +26,7 @@ claude plugin install legal-france
 | `/droit-administratif <question>` | Administration, juridictions administratives | Public administration, administrative courts |
 | `/droit-numerique <question>` | RGPD, CNIL, protection des données | GDPR, CNIL, data protection |
 | `/droit-europeen <question>` | Traités, directives, règlements, CJUE | Treaties, directives, regulations, CJEU |
+| `/rediger <type>` | Générer un modèle de document juridique (10 modèles disponibles) | Generate a legal document template (10 templates available) |
 
 ---
 
@@ -38,6 +39,27 @@ _The plugin auto-detects your profile and adapts its response:_
 - **Étudiant en droit** — Cas pratique, commentaire d'arrêt / Case analysis, case commentary
 - **Citoyen** _(défaut / default)_ — Langage clair, démarches pratiques / Plain language, practical steps
 - **Entreprise** — Conformité, analyse de documents / Compliance, document analysis
+
+---
+
+## Documents disponibles / Available documents
+
+Le rédacteur génère 10 modèles de documents prêts à personnaliser :
+
+| # | Document | Domaine |
+|---|---|---|
+| 1 | Mise en demeure générique | Transversal |
+| 2 | Attestation sur l'honneur | Transversal |
+| 3 | Lettre de licenciement | Travail |
+| 4 | Convention de rupture conventionnelle | Travail |
+| 5 | Lettre de démission | Travail |
+| 6 | Mise en demeure restitution caution | Civil / Bail |
+| 7 | Plainte simple au procureur | Pénal |
+| 8 | Contestation d'amende (OMP) | Pénal |
+| 9 | Recours gracieux administratif | Administratif |
+| 10 | Mentions légales + politique de confidentialité | Numérique |
+
+Invocation : `/rediger <type>` (ex : `/rediger lettre-licenciement`). Le rédacteur pose 5 à 15 questions ciblées, vérifie les articles cités sur Legifrance, puis génère le document avec une checklist de vérifications à effectuer avant envoi.
 
 ---
 
@@ -136,6 +158,7 @@ Invoquez `/jurisprudence harcèlement moral` : la réponse doit citer les pourvo
 
 | Version | Date | Description |
 |---------|------|-------------|
+| **v3.0.0** | Mai 2026 | 8 skills modulaires (1 méta + 7 domaines), 10 modèles de documents, intégration API Judilibre, suite de tests / 8 modular skills, 10 document templates, Judilibre API integration, test suite |
 | **v2.0.0** | Mars 2026 | Références enrichies, protocole cas complexes, vérification web obligatoire / Enriched references, complex case protocol, mandatory web verification |
 | **v0.1.0** | Février 2026 | Version initiale / Initial release |
 
