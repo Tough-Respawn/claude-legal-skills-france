@@ -100,6 +100,38 @@ _The plugin displays real-time step indicators while processing:_
 
 ---
 
+## Configuration Judilibre (optionnelle) / Judilibre setup (optional)
+
+> **FR :** Pour des recherches jurisprudentielles structurées via l'API officielle de la Cour de cassation. Gratuit. Sans cette config, le plugin retombe automatiquement sur les recherches web Legifrance.
+> **EN:** For structured case-law search via the official Cour de cassation API. Free of charge. Without this setup, the plugin transparently falls back to Legifrance web search.
+
+### Étapes / Steps
+
+1. Créer un compte sur [piste.gouv.fr](https://piste.gouv.fr) (la plateforme API de l'État).
+2. Dans le catalogue, souscrire à l'API **Judilibre — Cour de cassation**.
+3. Créer une application (générer une paire `client_id` / `client_secret`).
+4. Définir deux variables d'environnement :
+
+   **Linux / macOS :**
+   ```bash
+   export PISTE_CLIENT_ID="votre_client_id"
+   export PISTE_CLIENT_SECRET="votre_client_secret"
+   ```
+
+   **Windows PowerShell :**
+   ```powershell
+   $env:PISTE_CLIENT_ID = "votre_client_id"
+   $env:PISTE_CLIENT_SECRET = "votre_client_secret"
+   ```
+
+5. Relancer votre session Claude Code. Le plugin détecte automatiquement la présence des variables et utilise Judilibre en priorité.
+
+### Vérification / Verification
+
+Invoquez `/jurisprudence harcèlement moral` : la réponse doit citer les pourvois avec format `Cass. soc., date, n° pourvoi (Judilibre: id)`. Si la citation n'a pas l'identifiant Judilibre, c'est que le fallback Legifrance a été utilisé.
+
+---
+
 ## Versions
 
 | Version | Date | Description |
