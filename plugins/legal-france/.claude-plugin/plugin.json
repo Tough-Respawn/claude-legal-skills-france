@@ -1,6 +1,7 @@
 {
   "name": "legal-france",
-  "description": "French law assistant with domain-specific expertise across civil, criminal, labor, business, administrative, digital, and European law. Supports legal consultation, case law research, contract analysis, and document parsing.",
+  "version": "3.0.0",
+  "description": "French law assistant. 8 modular skills (1 meta + 7 domain) for high-recall auto-triggering on everyday phrasings. 10 ready-to-customize legal templates. Optional Judilibre case-law API integration. Covers civil, criminal, labor, business, administrative, digital, and European law.",
   "author": {
     "name": "Amine Harrak"
   }

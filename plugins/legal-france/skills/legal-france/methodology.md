@@ -458,3 +458,42 @@ Recommandation : Priorité à l'action 1 (délai de prescription : 12 mois, art.
 ---
 *Ces informations sont fournies à titre indicatif et ne constituent pas un avis juridique...*
 ```
+
+---
+
+## Judilibre Protocol
+
+When a user requests case-law research (the `/jurisprudence` command, or
+the Complex Case Protocol triggers a jurisprudential lookup), follow this
+protocol BEFORE falling back to `WebSearch site:legifrance.gouv.fr`:
+
+### Step 1 — Check PISTE credentials
+
+Verify `PISTE_CLIENT_ID` and `PISTE_CLIENT_SECRET` env vars are both set.
+If either is missing → skip Judilibre, use `WebSearch`, and emit the
+configuration hint once per session.
+
+### Step 2 — Follow the Judilibre client workflow
+
+Read `plugins/legal-france/lib/judilibre-client.md` and execute the call
+sequence (token, search, optional decision fetch). Use the chamber-code
+mapping table for French-format citations.
+
+### Step 3 — Cite using French legal citation standards
+
+Build citations from Judilibre metadata as defined in `## Citation
+Standards` of `skills/legal-france/SKILL.md`. Always append the Judilibre
+decision ID in parentheses: `Cass. soc., 25 nov. 2020, n° 19-13.340
+(Judilibre: 5fcb...)`.
+
+### Step 4 — On error, fall back
+
+Per the client workflow: silent fallback to `WebSearch` on 4xx/5xx (except
+401 which gets one retry). Add a one-line note in the response footer when
+the fallback was used.
+
+### Out of scope
+
+Judilibre covers Cour de cassation (and partially Cours d'appel) only.
+For Conseil d'État, Conseil constitutionnel, and CJUE, always use
+`WebFetch` against the relevant primary source.
