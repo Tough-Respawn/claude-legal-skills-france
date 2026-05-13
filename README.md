@@ -134,7 +134,7 @@ _The plugin displays real-time step indicators while processing:_
 1. Créer un compte sur [piste.gouv.fr](https://piste.gouv.fr) (la plateforme API de l'État).
 2. Dans le catalogue, souscrire à l'API **Judilibre — Cour de cassation**.
 3. Créer une application (générer une paire `client_id` / `client_secret`).
-4. Définir deux variables d'environnement. **Choisissez l'option qui correspond à votre setup** — une seule des trois suffit :
+4. Définir deux variables d'environnement. **Choisissez l'option qui correspond à votre setup** — une seule des deux suffit :
 
    #### Option A — Settings Claude Code (recommandée, persiste, marche partout)
 
@@ -151,7 +151,7 @@ _The plugin displays real-time step indicators while processing:_
 
    Si le fichier contient déjà d'autres clés, fusionnez le bloc `env` avec l'existant. Pas besoin de relancer le terminal — relancez juste la session Claude Code.
 
-   #### Option B — Variables d'environnement système (persistent globalement)
+   #### Option B — Variables d'environnement système (persistent globalement, utile si vous utilisez les creds avec d'autres outils)
 
    **Linux / macOS** — ajoutez à la fin de `~/.bashrc`, `~/.zshrc` ou `~/.profile` :
    ```bash
@@ -165,22 +165,6 @@ _The plugin displays real-time step indicators while processing:_
    2. Cliquez "Variables d'environnement" → section "Variables utilisateur" → "Nouveau".
    3. Créez `PISTE_CLIENT_ID` et `PISTE_CLIENT_SECRET` avec vos valeurs.
    4. Rouvrez Claude Code (les variables sont lues au démarrage).
-
-   #### Option C — Session shell uniquement (temporaire, à refaire à chaque ouverture)
-
-   **Linux / macOS :**
-   ```bash
-   export PISTE_CLIENT_ID="votre_client_id"
-   export PISTE_CLIENT_SECRET="votre_client_secret"
-   claude  # lancez Claude Code depuis ce shell
-   ```
-
-   **Windows PowerShell :**
-   ```powershell
-   $env:PISTE_CLIENT_ID = "votre_client_id"
-   $env:PISTE_CLIENT_SECRET = "votre_client_secret"
-   claude
-   ```
 
 5. Vérifiez que Claude Code voit les variables : invoquez `/jurisprudence test`. Si le footer mentionne *"configurez l'API Judilibre"*, c'est qu'elles ne sont pas détectées — vérifiez le fichier ou la méthode utilisée.
 
