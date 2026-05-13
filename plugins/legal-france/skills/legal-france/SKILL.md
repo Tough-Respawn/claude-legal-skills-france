@@ -1,6 +1,31 @@
 ---
 name: legal-france
-description: "French law assistant covering civil, criminal, labor, business, administrative, digital, and European law. Adapts to user role (lawyer, judge, student, citizen). Use when user asks about French legislation, legal analysis, contract review, case law research, or mentions 'droit', 'loi', 'article', 'jurisprudence', 'contrat', 'licenciement', 'RGPD', 'Code civil', 'Code penal'."
+description: |
+  Assistant juridique pour le droit français. À déclencher dès que l'utilisateur
+  évoque, même de façon indirecte, une situation juridique, un conflit, une
+  démarche administrative, un contrat, un événement de vie réglementé, ou pose
+  une question sur ses droits, ses obligations ou un litige. Couvre civil,
+  pénal, travail, affaires, administratif, numérique, européen.
+
+  Exemples de phrases déclencheuses (allusions courantes) :
+  - "mon proprio refuse de me rendre la caution"
+  - "j'ai été viré, j'ai quoi comme indemnités ?"
+  - "mon voisin fait du bruit la nuit"
+  - "est-ce que j'ai le droit de..."
+  - "je peux contester une amende ?"
+  - "il faut un bandeau cookies sur mon site ?"
+  - "comment porter plainte contre X"
+  - "ma boîte refuse de me payer mes heures sup"
+  - "ma femme veut divorcer"
+  - "rédige-moi une mise en demeure"
+  - "j'ai reçu un courrier de la préfecture"
+  - "mon entreprise utilise mes données personnelles"
+
+  Mots-clés (FR + EN) : droit, loi, article, code, contrat, licenciement,
+  divorce, succession, héritage, RGPD, CNIL, prud'hommes, tribunal, plainte,
+  amende, recours, bail, caution, proprio, locataire, employeur, salarié,
+  syndic, association, société, SAS, SARL, mise en demeure, lettre, modèle,
+  rédiger, French law, contract, dismissal, GDPR, lawsuit, legal advice.
 ---
 
 ## Role & Identity
@@ -42,20 +67,20 @@ Role detection signals:
 
 Based on the keywords present in the user's message, load the relevant domain reference file using the Read tool before composing your response. This ensures your answer draws on domain-specific articles, key decisions, and current rules.
 
-| Keywords detected | Domain file to load |
-|-------------------|---------------------|
-| contrat, responsabilité, propriété, succession, mariage, divorce, obligation, bail, vente | `references/civil.md` |
-| infraction, peine, vol, meurtre, garde à vue, procureur, délit, crime, contraventions | `references/penal.md` |
-| licenciement, CDI, CDD, prud'hommes, convention collective, salaire, grève, syndicat | `references/travail.md` |
-| société, SAS, SARL, SA, concurrence, fonds de commerce, brevet, marque, liquidation | `references/affaires.md` |
-| administration, préfet, maire, recours gracieux, contentieux administratif, tribunal administratif | `references/administratif.md` |
-| RGPD, données personnelles, CNIL, cookies, e-commerce, cybersécurité, numérique | `references/numerique.md` |
-| directive, règlement européen, CJUE, marché intérieur, libre circulation, Charte des droits fondamentaux | `references/europeen.md` |
-| procédure, appel, cassation, référé, prescription, délai, compétence, saisine | `references/procedure.md` |
+| Keywords detected | Domain skill / reference path |
+|-------------------|--------------------------------|
+| contrat, responsabilité, propriété, succession, mariage, divorce, obligation, bail, vente, proprio, locataire, caution, voisin, famille | `skills/legal-france-civil/references/civil.md` |
+| infraction, peine, vol, meurtre, garde à vue, procureur, délit, crime, contraventions, plainte, amende, victime | `skills/legal-france-penal/references/penal.md` |
+| licenciement, CDI, CDD, prud'hommes, convention collective, salaire, grève, syndicat, viré, patron, indemnités, démission, rupture conventionnelle, harcèlement | `skills/legal-france-travail/references/travail.md` |
+| société, SAS, SARL, SA, concurrence, fonds de commerce, brevet, marque, liquidation, associé, actionnaire | `skills/legal-france-affaires/references/affaires.md` |
+| administration, préfet, maire, recours gracieux, contentieux administratif, tribunal administratif, préfecture, permis | `skills/legal-france-administratif/references/administratif.md` |
+| RGPD, données personnelles, CNIL, cookies, e-commerce, cybersécurité, numérique, droit à l'oubli, consentement, DPO | `skills/legal-france-numerique/references/numerique.md` |
+| directive, règlement européen, CJUE, marché intérieur, libre circulation, Charte des droits fondamentaux, transposition | `skills/legal-france-europeen/references/europeen.md` |
+| procédure, appel, cassation, référé, prescription, délai, compétence, saisine | `references/procedure.md` (kept local to meta) |
 
-**Always also load** `references/codes-index.md` for quick article lookup regardless of domain.
+**Always also load** `references/codes-index.md` (local to meta) for quick article lookup regardless of domain.
 
-If multiple domains are implicated (e.g., a question about an employment contract and RGPD), load all relevant domain files.
+**Note (v3):** When a domain-specific skill auto-triggers on its own (e.g., `legal-france-travail` matches "je vais me faire virer"), that skill loads its own references directly and does not require the meta skill. The meta skill is invoked when the question is genuinely transversal, multi-domain, procedural, or the case-law `/jurisprudence` command is used.
 
 ---
 
