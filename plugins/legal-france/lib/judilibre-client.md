@@ -1,0 +1,179 @@
+# Judilibre Client — Workflow Documentation
+
+This document is read by the meta skill `legal-france` (and by any domain
+skill needing case-law research) when the user asks for jurisprudence and
+the PISTE credentials are configured. It defines the call sequence, the
+fallback policy, and the citation conventions for Judilibre results.
+
+There is no compiled client code. The skills perform `WebFetch` calls
+against the PISTE API following the specification below.
+
+---
+
+## 1. Credentials
+
+Two environment variables are read at call time:
+
+- `PISTE_CLIENT_ID`
+- `PISTE_CLIENT_SECRET`
+
+If either is missing, **skip Judilibre entirely and fall back to
+WebSearch**. Surface this one-time hint to the user:
+
+> Pour des recherches jurisprudentielles plus rapides et structurées, configurez l'API Judilibre (gratuit). Voir README pour la procédure d'inscription PISTE.
+
+To check: in a Bash step, the skill can run `printenv PISTE_CLIENT_ID` (or
+the Windows equivalent) and check that both vars are non-empty.
+
+---
+
+## 2. OAuth2 token
+
+**Endpoint:** `POST https://oauth.piste.gouv.fr/api/oauth/token`
+
+**Headers:**
+- `Content-Type: application/x-www-form-urlencoded`
+
+**Body (form-urlencoded):**
+- `grant_type=client_credentials`
+- `client_id=${PISTE_CLIENT_ID}`
+- `client_secret=${PISTE_CLIENT_SECRET}`
+- `scope=openid`
+
+**Response (200):**
+```json
+{
+  "access_token": "ey...",
+  "token_type": "Bearer",
+  "expires_in": 3600,
+  "scope": "openid"
+}
+```
+
+The token is valid for one hour. Cache the value in a session variable
+(do not write it to disk). On 401 responses to API calls, re-fetch the
+token once before falling back.
+
+---
+
+## 3. Search endpoint
+
+**Endpoint:** `GET https://api.piste.gouv.fr/cassation/judilibre/v1.0/search`
+
+**Headers:**
+- `Authorization: Bearer <access_token>`
+- `Accept: application/json`
+
+**Query parameters (most useful):**
+- `query` — full-text query (e.g., `harcèlement moral employeur`)
+- `jurisdiction` — `cc` (Cour de cassation), `ca` (Cours d'appel, partial), `cassation` for legacy alias
+- `chamber` — for cc: `civ1`, `civ2`, `civ3`, `soc`, `com`, `crim`, `mixte`, `pl`
+- `date_start`, `date_end` — `YYYY-MM-DD` format
+- `page_size` — default 10, max 50
+- `page` — 1-indexed
+- `sort` — `score` (default, relevance), `date` (most recent first)
+
+**Response (200):**
+```json
+{
+  "total": 42,
+  "page": 1,
+  "page_size": 10,
+  "results": [
+    {
+      "id": "61234abc...",
+      "jurisdiction": "cc",
+      "chamber": "soc",
+      "date": "2021-11-10",
+      "number": "20-12.345",
+      "ecli": "ECLI:FR:CCASS:2021:SO01234",
+      "publication": ["b"],
+      "solution": "rejet",
+      "summary": "...",
+      "title": "..."
+    }
+  ]
+}
+```
+
+---
+
+## 4. Decision endpoint
+
+**Endpoint:** `GET https://api.piste.gouv.fr/cassation/judilibre/v1.0/decision`
+
+**Query parameters:**
+- `id` — decision identifier returned by `/search`
+
+**Headers:** same as `/search`.
+
+**Response:** full decision document including `text` (texte intégral),
+`zones` (motifs, dispositif), `themes`, `visa` (articles visés), and
+`bulletin` info if published.
+
+---
+
+## 5. Workflow when a skill needs case law
+
+1. **Read credentials.** If either env var is empty → fallback to
+   `WebSearch site:legifrance.gouv.fr <user query>` (current v2 behaviour)
+   and emit the configuration hint **once per session**.
+
+2. **Fetch token.** If a session-cached token is still valid (< 60 min
+   old), reuse it. Otherwise call the token endpoint.
+
+3. **Search.** Issue a `GET /search` with the user's query, optionally
+   refined with `chamber=` if the user mentioned a specific chamber, and
+   `date_start=` if the user wants recent decisions.
+
+4. **Filter results.** Keep the top 5 by score. If the user wants a
+   specific decision (pourvoi number cited), use `?query=<pourvoi>` then
+   request `/decision?id=<id>` for the full text.
+
+5. **Cite using French standard.** Build citations from the search
+   metadata: `Cass. <chamber-fr>, <date-fr>, n° <number>, ECLI:<ecli>`.
+   Map chamber codes to French labels: `soc → soc.`, `civ1 → civ. 1re`,
+   `civ2 → civ. 2e`, `civ3 → civ. 3e`, `com → com.`, `crim → crim.`,
+   `mixte → mixte`, `pl → plén.`
+
+   Append the Judilibre decision ID as a supplementary reference:
+   `(Judilibre: <id>)`.
+
+6. **On error.** Any 4xx/5xx that is not 401 → fall back to `WebSearch`
+   silently for this query; surface a small note in the response footer:
+
+   > Note : la recherche Judilibre a renvoyé une erreur (<code>), je suis passé sur recherche web. La citation peut être moins précise.
+
+   On 401 → retry once after fetching a fresh token; if still 401, fall
+   back as above and emit:
+
+   > Note : impossible d'authentifier sur Judilibre, vérifiez vos identifiants PISTE.
+
+7. **Rate limiting.** Respect `Retry-After` headers when present. If
+   429 is returned, fall back to `WebSearch` for this query.
+
+---
+
+## 6. Out of scope
+
+- **Conseil d'État (CE)**: Judilibre coverage is partial; prefer
+  `WebFetch conseil-etat.fr` or `WebSearch site:conseil-etat.fr`.
+- **Conseil constitutionnel**: not in Judilibre. Use
+  `WebFetch conseil-constitutionnel.fr`.
+- **CJUE / Tribunal UE**: not in Judilibre. Use
+  `WebFetch curia.europa.eu` or `WebFetch eur-lex.europa.eu`.
+
+---
+
+## 7. Quick reference: chamber code mapping
+
+| Judilibre code | French citation form |
+|---|---|
+| `civ1` | Cass. civ. 1re |
+| `civ2` | Cass. civ. 2e |
+| `civ3` | Cass. civ. 3e |
+| `soc` | Cass. soc. |
+| `com` | Cass. com. |
+| `crim` | Cass. crim. |
+| `mixte` | Cass. ch. mixte |
+| `pl` | Cass. ass. plén. |
