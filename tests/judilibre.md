@@ -30,7 +30,7 @@ credentials (or unset them, depending on the test), then invoke
 **Expected:**
 - Response uses Legifrance-style citations (no Judilibre ID).
 - Response footer contains the one-time hint:
-  > Pour des recherches jurisprudentielles plus rapides et structurées, configurez l'API Judilibre (gratuit). Voir README pour la procédure.
+  > Pour des recherches jurisprudentielles plus rapides et structurées, configurez l'API Judilibre (gratuit). Voir README pour la procédure d'inscription PISTE.
 
 ---
 

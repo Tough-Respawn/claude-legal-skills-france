@@ -131,10 +131,10 @@ token once before falling back.
    request `/decision?id=<id>` for the full text.
 
 5. **Cite using French standard.** Build citations from the search
-   metadata: `Cass. <chamber-fr>, <date-fr>, n° <number>, ECLI:<ecli>`.
-   Map chamber codes to French labels: `soc → soc.`, `civ1 → civ. 1re`,
-   `civ2 → civ. 2e`, `civ3 → civ. 3e`, `com → com.`, `crim → crim.`,
-   `mixte → mixte`, `pl → plén.`
+   metadata in the form `<chamber-fr>, <date-fr>, n° <number>, ECLI:<ecli>`,
+   where `<chamber-fr>` is the full citation form from the chamber mapping
+   table in section 7 below (e.g., `Cass. soc.`, `Cass. civ. 1re`). The
+   "Cass." prefix is already included in the mapping — do not duplicate it.
 
    Append the Judilibre decision ID as a supplementary reference:
    `(Judilibre: <id>)`.
