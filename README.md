@@ -129,55 +129,20 @@ _The plugin displays real-time step indicators while processing:_
 > **FR :** Pour des recherches jurisprudentielles structurées via l'API officielle de la Cour de cassation. Gratuit. Sans cette config, le plugin retombe automatiquement sur les recherches web Legifrance.
 > **EN:** For structured case-law search via the official Cour de cassation API. Free of charge. Without this setup, the plugin transparently falls back to Legifrance web search.
 
-### Étapes détaillées / Detailed steps
+### Étape 1 — Obtenir vos identifiants PISTE
 
-#### Étape 1 — Créer un compte PISTE
+L'inscription PISTE, la création d'application, l'abonnement à Judilibre et la génération des clés sont documentés dans le guide officiel : **[piste.gouv.fr/help-center/guide](https://piste.gouv.fr/help-center/guide)**.
 
-Allez sur [piste.gouv.fr](https://piste.gouv.fr) → bouton **"Créer un compte"** (en haut à droite). Remplissez le formulaire (email, mot de passe, acceptez les CGU, captcha). Validez par email.
+Suivez ce guide jusqu'à obtenir un **Client ID** et un **Client Secret**.
 
-#### Étape 2 — Créer une application **de PRODUCTION** (point critique)
+**Deux pièges à éviter (spécifiques à notre plugin) :**
 
-> **Important** : à l'inscription, PISTE crée automatiquement une application **Sandbox** nommée `APP_SANDBOX_<votre-email>`. **Ne l'utilisez pas pour le plugin** — les credentials Sandbox utilisent une URL différente (`sandbox-oauth.piste.gouv.fr`) alors que le plugin appelle l'URL Production (`oauth.piste.gouv.fr`).
->
-> Vous **devez créer une application de Production manuellement**.
+- **Créez une application de PRODUCTION, pas Sandbox.** L'application `APP_SANDBOX_<votre-email>` créée automatiquement à l'inscription ne marche pas avec le plugin (le plugin appelle l'URL Production `oauth.piste.gouv.fr`, pas `sandbox-oauth.piste.gouv.fr`).
+- **Dans l'onglet Authentification, utilisez les "Identifiants Oauth", pas les "API Keys".** Ce sont deux méthodes d'authentification distinctes ; le plugin consomme uniquement les identifiants Oauth (flux Client Credentials, type "Confidentiel", URL de rappel et certificat X.509 laissés vides).
 
-1. Connecté à PISTE → menu **APPLICATIONS** → bouton **"Créer une application"**.
-2. Renseignez :
-   - **Nom de l'application** : unique, sans caractères spéciaux autres que `-` ou `_` (ex : `claude-legal-france`).
-   - **Description**, **Email**, **Information sur la structure**, **Responsable d'application** (obligatoires).
-   - Laissez **Activer l'application** coché.
-3. Cliquez **"Sauvegarder l'application"**.
+Une fois sur la page Authentification de votre application Production, vous lisez votre **Client ID** directement, et le **Client Secret** via "Consulter le client secret".
 
-#### Étape 3 — Raccorder l'API Judilibre à votre application
-
-1. Sur la fiche de votre nouvelle application, cliquez **"Modifier l'application"**.
-2. Validez les CGU de l'API Judilibre via le lien **"Cliquez ici pour accéder à la page de consentement"** (rubrique "Consentement CGU API").
-3. De retour sur la modification de l'application, cochez **Judilibre — Cour de cassation** dans le tableau "Sélectionner les API".
-4. Cliquez **"Appliquer les modifications"**.
-
-L'approbation est généralement automatique pour Judilibre (vérifiez que la case "Souscrite" devient grisée et cochée).
-
-#### Étape 4 — Générer les identifiants Oauth (vos VRAIES clés)
-
-> **Deux types d'identifiants existent dans l'onglet Authentification — utilisez le bon :**
-> - **API Keys** — ce n'est PAS ce qu'utilise le plugin (méthode d'auth différente).
-> - **Identifiants Oauth** — c'est ce qu'il faut.
-
-1. Sur la fiche de votre application → onglet **"Authentification"**.
-2. Section **"Identifiants Oauth"** → bouton **"Générer"**.
-3. Dans la popup :
-   - **Type d'application** : `Confidentiel` (sélectionné par défaut)
-   - **URL de rappel** : laisser **vide** (pas nécessaire pour le flux Client Credentials utilisé par le plugin)
-   - **Certificat X.509** : laisser **vide**
-4. Cliquez **"Générer un identifiant"**.
-
-Vous voyez maintenant dans la section "Identifiants Oauth" :
-- **Client ID** (long identifiant alphanumérique) → c'est votre `PISTE_CLIENT_ID`.
-- **Secret key** masqué → cliquez **"Consulter le client secret"** → bouton **"Copy"** pour copier le secret → c'est votre `PISTE_CLIENT_SECRET`.
-
-> **Conservez le secret immédiatement** dans un gestionnaire de mots de passe. Vous pouvez le re-consulter à tout moment, mais PISTE recommande de le **régénérer tous les 3 mois** (action "Modifier" → "Régénérer" sur l'identifiant).
-
-#### Étape 5 — Définir deux variables d'environnement
+### Étape 2 — Définir deux variables d'environnement
 
 **Choisissez l'option qui correspond à votre setup** — une seule des deux suffit :
 
@@ -211,19 +176,11 @@ Puis `source ~/.bashrc` (ou rouvrez votre terminal).
 3. Créez `PISTE_CLIENT_ID` et `PISTE_CLIENT_SECRET` avec vos valeurs.
 4. Rouvrez Claude Code (les variables sont lues au démarrage).
 
-#### Étape 6 — Vérifier que tout marche
+### Étape 3 — Vérifier
 
-Invoquez `/jurisprudence harcèlement moral`. Trois cas possibles :
+Invoquez `/jurisprudence harcèlement moral`. Si les citations sortent au format `Cass. soc., date, n° pourvoi (Judilibre: id)`, c'est bon. Sinon le footer indique pourquoi (variables non détectées, erreur d'auth, app Sandbox au lieu de Production).
 
-- **[OK] Citation au format `Cass. soc., date, n° pourvoi (Judilibre: id)`** → tout fonctionne, Judilibre répond.
-- **[FALLBACK] Citation sans l'identifiant `(Judilibre: ...)` et footer mentionnant *"configurez l'API Judilibre"*** → les variables d'environnement ne sont pas détectées par Claude Code. Vérifiez votre fichier de config et relancez la session.
-- **[ERREUR AUTH] Footer mentionnant une erreur d'authentification PISTE** → soit les identifiants sont incorrects, soit vous avez utilisé l'app **Sandbox** au lieu de Production. Régénérez une paire `Identifiants Oauth` dans votre **application de Production**.
-
-### Quotas et bonnes pratiques
-
-- **Quota par défaut en Production** : 20 requêtes / seconde. Largement suffisant pour un usage perso ou petite équipe. Au-delà, HTTP 429 et le plugin retombe sur le WebSearch Legifrance pour la requête en cours.
-- **Sécurité** : ne commitez jamais vos credentials PISTE dans un repo Git. Le `.gitignore` du projet exclut déjà `.claude/` pour cette raison. Si vous suspectez une fuite, "Modifier" → "Régénérer" sur l'identifiant Oauth dans PISTE.
-- **Rotation** : PISTE recommande de régénérer le `client_secret` tous les 3 mois.
+> **Sécurité** : ne commitez jamais vos credentials dans un repo Git. PISTE recommande de régénérer le `client_secret` tous les 3 mois.
 
 ---
 
